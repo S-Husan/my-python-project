@@ -166,7 +166,36 @@ z = 2j # Complex
 # c = [1,2,3,4]
 # c[0]= 'First'
 # print(c)
+# ...................
+# b =[2,3,4,5,8]
+# b[2] = 'ASD'
+# print(b)
 
-b =[2,3,4,5,8]
-b[2] = 'ASD'
-print(b)
+
+#Change a range of item values 
+# x = ['apple','banan','cherry']
+# x[2:3] = ['a','b']
+# print(x)
+
+# If you insert more items than you replace,-
+# -the new items will be inserted where you specified,-
+# -and the remaining items will move accordingly.
+
+# p = ['a','s','f']
+# p[0:2]= ['x','v','t','y']
+# print(p)
+
+# insert Items
+# inseet() method insertd an item at the specified index-
+# ,and it doesn't replace any existing values in the list.
+# x = ['apple','banan','cherry']
+# x.insert(2,"Chocotela")
+# print(x)
+
+
+
+
+
+
+
+
