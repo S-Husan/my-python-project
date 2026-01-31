@@ -199,5 +199,11 @@ z = 2j # Complex
 # print(x)
 
 
+# extend 
+# To uppend elements from another list to the current list,-
+# use the extend() method.
 
-
+# old = [1,2,3]
+# new = [4,5,6]
+# old.extend(new)
+# print(old) 
