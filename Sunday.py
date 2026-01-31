@@ -192,9 +192,11 @@ z = 2j # Complex
 # x.insert(2,"Chocotela")
 # print(x)
 
-
-
-
+# Append()
+# To add an item to the end of the list, use the append() method.
+# x = ['apple','banan','cherry']
+# x.append("JUSEEE")
+# print(x)
 
 
 
