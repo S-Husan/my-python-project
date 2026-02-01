@@ -202,8 +202,27 @@ z = 2j # Complex
 # extend 
 # To uppend elements from another list to the current list,-
 # use the extend() method.
-
+ 
 # old = [1,2,3]
 # new = [4,5,6]
 # old.extend(new)
 # print(old) 
+
+# Add any iterable
+# The extend() method does not have to append() lists;
+
+# Remove Specified items
+# remove()
+# x= ['app','coll','pull']
+# x.remove("app")
+# print(x)
+
+# Remove Specified Index  
+# x= ['app','coll','pull']
+# x.pop(0)
+# print(x)  
+
+# If you don't spesify the index, the pop() method removes the last item.
+x = [1,23,4,5,6,7]
+x.pop()
+print(x)
