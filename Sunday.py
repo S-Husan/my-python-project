@@ -223,6 +223,15 @@ z = 2j # Complex
 # print(x)  
 
 # If you don't spesify the index, the pop() method removes the last item.
-x = [1,23,4,5,6,7]
-x.pop()
-print(x)
+# x = [1,23,4,5,6,7]
+# x.pop()
+# print(x)
+
+# del also removes the specified index.
+# z = [12,5,6,4,2,5,4]
+# del z[0]
+# print(z)
+
+d = ["as","er","fgg"]
+del d[2]
+print(d)
