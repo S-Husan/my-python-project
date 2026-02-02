@@ -256,7 +256,44 @@ z = 2j # Complex
 #     print(num[i])
 
 # Revision just for me 
-# LOOP throuh the list
-x  = [1,2,3,4,5]
-for i in range(len(x)):
-    print(x[i])
+# loop throgh the list with for 
+# x  = [1,2,4,5,3]
+# for i in x:
+#     print(i)
+# LOOP throuh the list by using index number
+# x  = [1,2,3,4,5,330]
+# for i in range(len(x)):
+#     print(x[i])
+
+# MODULE 5
+# Using while loop 
+# ROOLS ===>
+# ===>  You can loop through the list items by using a while loop.
+# ===>  Use the len() function to determine the list length, 
+# ===>  then start at 0 and loop your way through the list items 
+# ===>  by referring to their indexes.
+# ===>  Remember to increase the index by 1 after each iteration.
+
+# x = ['apple','bnan','cherry']
+# i = 0
+# while i < len(x):
+#     print(x[i])
+#     i= i + 1
+    
+# Looping Using List Comprehension
+# List Comprehension offers the shortest syntax for looping through lists.
+# A shorthand for loop that will print all items in a list.
+# y= ["apple", "banana", "cherry"]
+# # [print(i) for i in y]
+
+
+# Revision
+# y= ["apple", "banana", "cherry"]
+# [print(x) for x in y]
+
+y= ["apple", "banana", "cherry"]
+n = []
+for i in y:
+    if 'a' in i:
+        n.append(i)
+print(n)
