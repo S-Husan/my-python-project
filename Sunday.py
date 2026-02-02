@@ -232,6 +232,25 @@ z = 2j # Complex
 # del z[0]
 # print(z)
 
-d = ["as","er","fgg"]
-del d[2]
-print(d)
+
+# Clear() method empties the list 
+# The list remains, but without content
+# z = [12,5,6,4,2,5,4]
+# z.clear()
+# print(z)
+
+# LOOPS in LIST
+# y = [1,3,4]
+# for i in y:
+#     print(i)
+    
+# Loop through the index number
+# x = ['apple','orange','banana','cherry']
+# for i in range(len(x)):
+#     print(x[i])
+    
+    
+    
+# num = [1,2,3,4,5]
+# for i in range(len(num)):
+#     print(num[i])
