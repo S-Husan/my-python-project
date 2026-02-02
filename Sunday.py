@@ -254,3 +254,9 @@ z = 2j # Complex
 # num = [1,2,3,4,5]
 # for i in range(len(num)):
 #     print(num[i])
+
+# Revision just for me 
+# LOOP throuh the list
+x  = [1,2,3,4,5]
+for i in range(len(x)):
+    print(x[i])
