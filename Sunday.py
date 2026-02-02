@@ -291,9 +291,58 @@ z = 2j # Complex
 # y= ["apple", "banana", "cherry"]
 # [print(x) for x in y]
 
-y= ["apple", "banana", "cherry"]
-n = []
-for i in y:
-    if 'a' in i:
-        n.append(i)
-print(n)
+# y= ["apple", "banana", "cherry"]
+# n = []
+# for i in y:
+#     if 'a' in i:
+#         n.append(i)
+# print(n)
+
+# num = [1,2,3,411,331,'q']
+# n = []
+# for i in num:
+#     if "q" in num:
+#         n.append(i)
+# print(n)
+
+# Prictise
+# for i in range(1, 21):
+#     if i == 15:
+#         print(f"{i}: You should stop here")
+#         break
+#     print(f"{i}: Going right")
+#
+
+
+
+
+# NEW TOPIC 
+
+# # Iterable
+# y = [x for x in range(10)]
+# print(y) 
+
+#Simple version =====>
+
+# y = []
+# for x in range(10):
+#     y.append(x)
+# print(y)
+
+
+# Expression
+# fr = ['app','sks','dd','wkd']
+# newlist = [x.upper() for x in fr]
+# print(newlist)
+# Simple version =====>
+# fr = ['app', 'sks', 'dd', 'wkd']
+# newlist = []          # empty list
+# for x in fr:          # take each word from fr
+#     newlist.append(x.upper())  # make it uppercase and add to newlist
+# print(newlist)
+
+# f = ['111','222']
+# na = []
+# for x in f:
+#     na.append(x.lower())
+# print(na)
