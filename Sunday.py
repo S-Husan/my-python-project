@@ -457,5 +457,24 @@ z = 2j # Complex
 # Unchageable means  )==> that we cannot change, add or remove items after the tuple created 
 
 # Allow duplicates
-x = ('a',"b",'a')
-print(x)
+# x = ('a',"b",'a')
+# print(x)
+
+# Rule for tople 
+# to type one object insie the tuple u need to put
+# comma(,)after that otherwise Python will not recognize it as a tuple.
+# t = ('apple',)
+# print(t)
+
+# Tuple length
+# tuple = (1,2,3,4,5)
+# print(len(tuple))
+
+
+# Tuple constructor 
+# x=("apple", "banana", "cherry")
+# thistuple = tuple(x)
+# print(thistuple)
+
+
+
