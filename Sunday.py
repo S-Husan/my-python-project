@@ -477,4 +477,45 @@
 # print(thistuple)
 
 
+# Access Tuple Items
+# you can access tuple items by referring to the index number, -
+# inside sqeare brackets.
+# this = ('apple','banana','Cherry')
+# print(this[2])
 
+
+# negative indexing 0===> means start from the end (starts from -1)
+# t = (1,2,3,4)
+# print(t[-1])
+
+# Range of Indexs
+# You can choose where to start and were to end the range
+# When specifing a range, the return value will ba a new tuple with the specified items.
+# t = (1,23,4,5,5,6,6)
+# print(t[0:3])
+
+# Check if item exists 
+# a = ("ap",'sd','ad')
+# if "ap" in a:
+#     print(True)
+
+# Update tuples
+# Tuples are unchangable, meaning that you cannot change ,
+# add, or remove items once the tuple is created.
+
+# Converting tuple to list and after changing values ,converting back to tuple()
+# x =("apple","banna","cherry")
+# y = list(x)
+#add element 
+# y.append("Cucumber")
+# change element by using it's index
+# y[1]= "kiwi"
+# x = tuple(y)
+# print(x) 
+
+# Revision
+# x = ('2','3','4')
+# new = list(x)
+# new.append("Sosages")
+# x = tuple(new)
+# print(x)
