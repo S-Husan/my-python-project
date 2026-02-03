@@ -20,10 +20,11 @@ z = 2j # Complex
 # Strings are Arrays 
 # A single charcter is simply a string with a length of 1
 # a = "Hello world"
-# print(a[0:4])
+# print(a[0:2])
 
 # Looping thorugh a String 
-# Since string are arrays, we can loop through the characters in a string with a "FOR" loop.
+# Since string are arrays, we can loop through the characters in a 
+# string with a "FOR" loop.
 
 # for x in "Salom":
 #     print(x)
@@ -33,7 +34,7 @@ z = 2j # Complex
 # a = "I am from Samarkand"
 # print(len(a))
 
-# Check string we use "IN"
+# to Check string we use "IN"
 # a = "I am from Samarkand"
 # if 'Samarkand' in a:
 #     print("Yes it is")
@@ -67,6 +68,7 @@ z = 2j # Complex
 # 4 Replace() replaces string with another one
 # a = "Hell aplla"
 # print(a.replace("l","Bo"))
+# print(a.replace('l','2'))
 
 # Split string
 # 5 Split()
@@ -87,6 +89,12 @@ z = 2j # Complex
 # Major = "CS" 
 # txt = "Hi my name is husan and my age is {}, and i study at university and my major is {}"
 # print(txt.format(age,Major))
+
+# age = 12
+# school= 1
+# txt = "hi my age is {} ,a and i study at {}, school"
+# print(txt.format(age,school))
+
 
 
 # Module 2
@@ -109,7 +117,7 @@ z = 2j # Complex
 # Count
 # txt = ' i like red apple, green apple, and yellow apple'
 # print(txt.count("apple"))
-
+# print(txt.count("i"))
 # BOOLEANS (True or False)
 # print(10 < 9)   /False
 # print(10 == 9)  /False
@@ -127,9 +135,6 @@ z = 2j # Complex
 # def My_f():
 #     return False
 # print(My_f())
-
-# chat gpt if you see this node plase explain me (Function can return a boolean part)
-
 
 
 # MODULE 3 
@@ -149,7 +154,7 @@ z = 2j # Complex
 # Acces items in list becase they are indexed 
 # x = ["Apple","juce","cola"]
 # print(x[1])
-
+# print(x[1-2])
 # Using range of indexes in list 
 # x = ["Apple","juce","cola"]
 # print(x[0:2]) 
@@ -175,6 +180,7 @@ z = 2j # Complex
 #Change a range of item values 
 # x = ['apple','banan','cherry']
 # x[2:3] = ['a','b']
+# x[0:2] = ["LAP","pal"]
 # print(x)
 
 # If you insert more items than you replace,-
@@ -186,10 +192,14 @@ z = 2j # Complex
 # print(p)
 
 # insert Items
-# inseet() method insertd an item at the specified index-
+# insert() method insertd an item at the specified index-
 # ,and it doesn't replace any existing values in the list.
 # x = ['apple','banan','cherry']
 # x.insert(2,"Chocotela")
+# print(x)
+
+# x = [12,3,4,5]
+# x.insert(1,"second is here")
 # print(x)
 
 # Append()
@@ -208,6 +218,9 @@ z = 2j # Complex
 # old.extend(new)
 # print(old) 
 
+# new.append(old)
+# print(new)
+
 # Add any iterable
 # The extend() method does not have to append() lists;
 
@@ -216,11 +229,15 @@ z = 2j # Complex
 # x= ['app','coll','pull']
 # x.remove("app")
 # print(x)
+# x.remove("coll")
+# print(x)
+
 
 # Remove Specified Index  
 # x= ['app','coll','pull']
 # x.pop(0)
 # print(x)  
+
 
 # If you don't spesify the index, the pop() method removes the last item.
 # x = [1,23,4,5,6,7]
@@ -231,7 +248,8 @@ z = 2j # Complex
 # z = [12,5,6,4,2,5,4]
 # del z[0]
 # print(z)
-
+# del z[2]
+# print(z)
 
 # Clear() method empties the list 
 # The list remains, but without content
@@ -248,9 +266,7 @@ z = 2j # Complex
 # x = ['apple','orange','banana','cherry']
 # for i in range(len(x)):
 #     print(x[i])
-    
-    
-    
+
 # num = [1,2,3,4,5]
 # for i in range(len(num)):
 #     print(num[i])
@@ -279,6 +295,11 @@ z = 2j # Complex
 # while i < len(x):
 #     print(x[i])
 #     i= i + 1
+
+# i = 0
+# while i  < len(x):
+#     print(x[i])
+#     i=+i
     
 # Looping Using List Comprehension
 # List Comprehension offers the shortest syntax for looping through lists.
@@ -346,3 +367,95 @@ z = 2j # Complex
 # for x in f:
 #     na.append(x.lower())
 # print(na)
+
+
+# Sort lists Alphanumerically
+# x = ["d",'a','w','r','f','g','q' ]
+# x.sort()
+# print(x)
+
+# sort() numerically
+# x = [103,5,7,2,1,8,9,6]
+# x.sort()
+# print(x)
+
+# reverse = True )=> to sort reversed sort()
+# z = [2,5,6,7,3]
+# z.sort(reverse= True)
+# print(z)
+
+# Case insensitive sort
+# By default the sort() is case_sensitive, sorting all capital letters before lowercase letters.
+# x = ['APplE','skd','cucumber','pineapple']
+# x.sort()
+# print(x)
+
+# Case-insensitive sort function we use this 
+# x = ['APplE','skd','cucumber','pineapple']
+# x.sort(reverse = True)
+# print(x)
+
+# Reverse order
+# The reverse() method reverses the current sorting order of the elements.
+# x = ['banan','cucumber','potato','sosages']
+# x.reverse()
+# print(x)
+
+# Copy a list 
+# we use Copy() method
+# x = [1,3,4]
+# new = x.copy()
+# print(new)
+
+# Another way to make a copy is using list()
+# x = [1,23,4]
+# z = list(x)
+# print(z)
+
+# x = [35,6,6543,56,3]
+# z = list(x)
+# print(z)
+
+# Join two lists by using + operator
+# x = ['a','b','c','d']
+# y = [1,2,4]
+# z = x + y
+# print(z)
+
+# Another way to join two lists is by appending all the items from list2 into list1, one by one
+# a = [12]
+# b = [13,4,5]
+# for i in b:
+#     a.append(x)
+    # “Put value at the end of list a.”
+    # “Take the current number stored in i and put it into list a.”
+# print(a)        
+
+
+# or Use the extend() method to add list2 to the end of list1
+# a = [232,3,5]
+# b = [0,0,0]
+# a.extend(b)
+# print(a)
+
+ 
+ 
+# MODULE 6
+# Tuples
+# They are used to store multple ites in a single variable.
+# A tupel is a collection which is ordered and unchangeable.
+# Tuples are written with round breackets().
+# x = ("apple","banna","Cherry")
+# print(x)
+
+# Tuple Items
+# Tuple items are ordered Unchangeable,and allow duplicate values
+
+
+# Ordered means )==> that the items have a defined order,and that order will not change.
+
+# Unchageable means  )==> that we cannot change, add or remove items after the tuple created 
+
+# Allow duplicates
+x = ('a',"b",'a')
+print(x)
