@@ -3,9 +3,9 @@
 
 # MODULE I
 
-x = 1 # Int
-y = 2.3 # Float
-z = 2j # Complex
+# x = 1 # Int
+# y = 2.3 # Float
+# z = 2j # Complex
 
 # Type function (We use this to verify the type of opject)
 
