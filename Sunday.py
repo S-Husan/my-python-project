@@ -17,12 +17,15 @@
 # import random
 # print(random.randrange(1,20))
 
+# import random
+# print(random.randrange(1,30))
+
 # Strings are Arrays 
 # A single charcter is simply a string with a length of 1
 # a = "Hello world"
 # print(a[0:2])
 
-# Looping thorugh a String 
+# Looping through a String 
 # Since string are arrays, we can loop through the characters in a 
 # string with a "FOR" loop.
 
@@ -69,6 +72,7 @@
 # a = "Hell aplla"
 # print(a.replace("l","Bo"))
 # print(a.replace('l','2'))
+# print(a.replace('a','C'))
 
 # Split string
 # 5 Split()
@@ -94,8 +98,6 @@
 # school= 1
 # txt = "hi my age is {} ,a and i study at {}, school"
 # print(txt.format(age,school))
-
-
 
 # Module 2
 # NEW TOPICS 
@@ -519,3 +521,4 @@
 # new.append("Sosages")
 # x = tuple(new)
 # print(x)
+
