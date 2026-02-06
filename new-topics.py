@@ -190,30 +190,47 @@
 
 # new topic
 # inheretance )==> наследство 
-
-
 # class hydar:  is Base class (Father class)
         # some property(x,y,z)
 # class zafar: is derived class) (child class)
-
-
 # if parent class has some properties the child class can also have 
 # access to those properties and this colled as (Inheretance)
-
-
-class haydar:
-    def __init__(self,m,h): 
-        self.m =m
-        self.h= h
+# class haydar:
+#     def __init__(self,m,h): 
+#         self.m =m
+#         self.h= h
         
-    def hello(self): #metter
-        print(self.m,self.h) 
+#     def hello(self): #metter
+#         print(self.m,self.h) 
         
-    def bye(self):
-        print(self.h)
+#     def bye(self):
+#         print(self.h)
+    
     
           
-child1 = haydar("100%","Gagarin")
+# child1 = haydar("100%","Gagarin")
 
-child1.hello()
-child1.bye()
+# child1.hello()
+# child1.bye()
+
+
+# Creating a child class
+# class haydar:
+#     def __init__(self,m,h): # m and h are properties
+#         self.m =m
+#         self.h= h
+        
+#     def hello(self): #metter
+#         print(self.m,self.h) 
+        
+#     def bye(self):
+#         print(self.h)
+    
+# class zafar(haydar):
+#         def __init__ (self,zm,zh):
+#             self.zm = zm 
+#             self.zh = zh 
+#         def zjob(self):
+#             print(self.zm)
+#             print(self.zh)
+            
