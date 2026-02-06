@@ -506,21 +506,21 @@
 # add, or remove items once the tuple is created.
 
 # Converting tuple to list and after changing values ,converting back to tuple()
-x =("apple","banna","cherry")
-y = list(x)
+# x =("apple","banna","cherry")
+# y = list(x)
 # add element 
-y.append("Cucumber")
+# y.append("Cucumber")
 # change element by using it's index
-y[1]= "kiwi"
-x = tuple(y)
-print(x) 
+# y[1]= "kiwi"
+# x = tuple(y)
+# print(x) 
 
 # Revision
-x = ('2','3','4')
-new = list(x)
-new.append("Sosages")
-x = tuple(new)
-print(x)
+# x = ('2','3','4')
+# new = list(x)
+# new.append("Sosages")
+# x = tuple(new)
+# print(x)
 
 
 
