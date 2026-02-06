@@ -82,29 +82,40 @@
 # print(md.gold)
 
 
-class person:
-    def __init__(self,name,age):
-        self.name = name
-        self.age= age     
+# class person:
+#     def __init__(self,name,age):
+#         self.name = name
+#         self.age= age     
 
 
-p1= person("name:Galety","age 52",)
-p2= person("name:Rafi","age 41")
-print(p1.name)
-print(p1.age)
-print(p2.name)
-print(p2.age)
+# p1= person("name:Galety","age 52",)
+# p2= person("name:Rafi","age 41")
+# print(p1.name)
+# print(p1.age)
+# print(p2.name)
+# print(p2.age)
 
-print("---------------------------------------------------")
+# print("---------------------------------------------------")
 
-class haydar():
-    def __init__ (self,money,car,house):
-        self.mony=money
-        self.car= car
-        self.house =house
-zafar = haydar("100$","Laceti","Gagarin house")
-md = haydar("5000$","BMW","Rudaki")
+# class haydar():
+#     def __init__ (self,money,car,house):
+#         self.mony=money
+#         self.car= car
+#         self.house =house
+# zafar = haydar("100$","Laceti","Gagarin house")
+# md = haydar("5000$","BMW","Rudaki")
 
-print(md.house)
+# print(md.house)
 
-print("---------------------------------------------------")
+# print("---------------------------------------------------")
+
+
+# 2.06.2026
+# New Topic
+
+print("+-------+-----+-----------+")
+print("| Name  | Age | City      |")
+print("+-------+-----+-----------+")
+print("| Ali   | 20  | Tashkent  |")
+print("| Sara  | 22  | Samarkand |")
+print("+-------+-----+-----------+")
