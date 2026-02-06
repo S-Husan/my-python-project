@@ -110,12 +110,68 @@
 # print("---------------------------------------------------")
 
 
+# print("+-------+-----+-----------+")
+# print("| Name  | Age | City      |")
+# print("+-------+-----+-----------+")
+# print("| Ali   | 20  | Tashkent  |")
+# print("| Sara  | 22  | Samarkand |")
+# print("+-------+-----+-----------+")
+
+
+
+# class parents():
+#     def __init__(self,m,h):
+#         self.m = m
+#         self.h = h
+# child = parents('100$', 'x')
+# child2 = parents('100$', 'y')
+# print(child.m)
+# print(child2.m)
+
+
+# print("---------------------------------------------------")
 # 2.06.2026
 # New Topic
+# Modify object properties
 
-print("+-------+-----+-----------+")
-print("| Name  | Age | City      |")
-print("+-------+-----+-----------+")
-print("| Ali   | 20  | Tashkent  |")
-print("| Sara  | 22  | Samarkand |")
-print("+-------+-----+-----------+")
+
+class person:
+    def __init__(self,name,age):
+        self.name = name
+        self.age= age     
+
+
+p1= person("name:Galety","age 52",)
+p2= person("name:Rafi","age 41")
+
+
+p1.name = "Mohammed"
+
+print(p1.name)
+print(p1.age)
+print(p2.name)
+print(p2.age)
+
+print("---------------------------------------------------")
+
+# Delite object properties
+class person:
+    def __init__(self,money,car,house):
+        self.money = money
+        self.car= car      
+        self.house=house
+
+zafar = person("100$", "Car","House")
+md = person("500$", "laceti","big house")
+print("Before-Zafar properties")
+print(zafar.money, "|""\t\t", zafar.car, "|""\t\t",zafar.house)
+
+del zafar.money
+
+
+print("---------------------------------------------------")
+print("After-Zafar properties")
+print("none" ,"|""\t\t",zafar.car,"|" "\t\t",zafar.house)
+print(zafar)
+
+
