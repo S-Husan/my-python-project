@@ -135,43 +135,85 @@
 # Modify object properties
 
 
-class person:
-    def __init__(self,name,age):
-        self.name = name
-        self.age= age     
+# class person:
+#     def __init__(self,name,age):
+#         self.name = name
+#         self.age= age     
 
 
-p1= person("name:Galety","age 52",)
-p2= person("name:Rafi","age 41")
+# p1= person("name:Galety","age 52",)
+# p2= person("name:Rafi","age 41")
 
 
-p1.name = "Mohammed"
+# p1.name = "Mohammed"
 
-print(p1.name)
-print(p1.age)
-print(p2.name)
-print(p2.age)
+# print(p1.name)
+# print(p1.age)
+# print(p2.name)
+# print(p2.age)
 
-print("---------------------------------------------------")
+# print("---------------------------------------------------")
 
 # Delite object properties
-class person:
-    def __init__(self,money,car,house):
-        self.money = money
-        self.car= car      
-        self.house=house
+# class person:
+#     def __init__(self,money,car,house):
+#         self.money = money
+#         self.car= car      
+#         self.house=house
 
-zafar = person("100$", "Car","House")
-md = person("500$", "laceti","big house")
-print("Before-Zafar properties")
-print(zafar.money, "|""\t\t", zafar.car, "|""\t\t",zafar.house)
+# zafar = person("100$", "Car","House")
+# md = person("500$", "laceti","big house")
+# print("Before-Zafar properties")
+# print(zafar.money, "|""\t\t", zafar.car, "|""\t\t",zafar.house)
 
-del zafar.money
-
-
-print("---------------------------------------------------")
-print("After-Zafar properties")
-print("none" ,"|""\t\t",zafar.car,"|" "\t\t",zafar.house)
-print(zafar)
+# del zafar.money
 
 
+# print("---------------------------------------------------")
+# print("After-Zafar properties")
+# print("none" ,"|""\t\t",zafar.car,"|" "\t\t",zafar.house)
+# print(zafar)
+
+
+# Empty class
+# class SIUT:
+    # pass
+# if we write pass it doesn't show errors
+
+
+# /they are the same but name is different
+# pop )==> functions
+# oop )==> metters for expmle (__init__)
+# class has obeject ,properties, metters
+
+
+
+# new topic
+# inheretance )==> наследство 
+
+
+# class hydar:  is Base class (Father class)
+        # some property(x,y,z)
+# class zafar: is derived class) (child class)
+
+
+# if parent class has some properties the child class can also have 
+# access to those properties and this colled as (Inheretance)
+
+
+class haydar:
+    def __init__(self,m,h): 
+        self.m =m
+        self.h= h
+        
+    def hello(self): #metter
+        print(self.m,self.h) 
+        
+    def bye(self):
+        print(self.h)
+    
+          
+child1 = haydar("100%","Gagarin")
+
+child1.hello()
+child1.bye()
