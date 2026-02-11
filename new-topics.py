@@ -216,7 +216,7 @@
 
 # Creating a child class
 # class haydar:
-#     def __init__(self,m,h): # m and h are properties
+#     def __init__ (self,m,h): # m and h are properties
 #         self.m =m
 #         self.h= h
         
@@ -233,4 +233,5 @@
 #         def zjob(self):
 #             print(self.zm)
 #             print(self.zh)
-            
+
+      
