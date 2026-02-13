@@ -326,24 +326,144 @@
 
 # MAking list an iterbale elemnts one by one
 
-l = [10,20,30]
-b = iter(l)
-print(next(b))
-print(next(b))
-print(next(b))
+# l = [10,20,30]
+# b = iter(l)
+# print(next(b))
+# print(next(b))
+# print(next(b))
 
 
 # we can make string as a iterable
-name = 'Husan'
-b = iter(name)
-print(next(b))
-print(next(b))
-print(next(b))
-print(next(b))
-print(next(b))
+# name = 'Husan'
+# b = iter(name)
+# print(next(b))
+# print(next(b))
+# print(next(b))
+# print(next(b))
+# print(next(b))
 
 
 # Colimorphesm 
 
+
+# Class is blue print 
+
+# class human():
+#     def __init__(self,head,arms,lags):
+#         class Galety():
+#             def __init__(h3):
+#                 x = Galety("h1","a","l",'a','d')
+# print(Galety)
+
+
+                # NEW TOPIC---------------------- 
+                # 2.13.2026----------------------
+                # Polymorphism-------------------
+
+
+
+# class Car:
+#     def __init__(self,brand,model):
+#         self.brand = brand
+#         self.model = model
+        
+# def move(self):
+#     print("Drive")
+
+# class Boat:
+#     def __init__(self,brand,model):
+#         self.brand = brand
+#         self.model = model
+        
+# def move(self):
+#     print("Drive")     
+    
+# class Plane:
+#     def __init__(self,brand,model):
+#         self.brand = brand
+#         self.model = model
+        
+# def move(self):
+#     print("Drive")     
+    
+    
+# car1 = Car("Ford", "Mustand")#Create an object  
+# boat1 = Boat("Ibiz", "Touring 20")#Create an object
+# plane1 = Plane("Boeing", "747")#Create an object
+        
+# for x in(car1,boat1,plane1):
+#     x.move()
+
+
+# # ////////////////////////////////////////////////////////
+
+# class Vehicle():
+#     def __init__ (self,brand,model):
+#         self.brand = brand
+#         self.model = model
+#     def move(self):
+#         print("Move")
+#         class Car(Vehicle):
+#             pass  
+# class Boat (Vehicle):
+#     def move(self):
+#                 print("Sail")
+# class Plane (Vehicle):
+#     def move(self):
+#                 print("Fly")
+                
+# for x in(car1,boat1,plane1):
+#     print(x.brand)
+#     print(x.model)
+#     x.move()
+
+
+
+# NEW TOPIC
+# SCOPE
+# x = 300
+
+# def hell(): 
+#     global x   
+#     x = 200
+# hell()
+# print(x)
+
+
+
+# Function insede the function is recursion!!!!!!
+# def myf():
+#     x = 300
+#     def myinnerf():
+#         print(x)
+#     myinnerf()
+# myf()
+
+
+# def uzb():
+#     x =300
+#     def tashkent():
+#         print(x)
+#         global y
+#         y = 500
+#     tashkent()
+    
+#     def samrkand():
+#         print(x)
+#     samrkand()
+        
+# uzb()
+# print(y)
+
+# Naming Variables
+
+
+x =300
+def hello():
+    x= 200
+    print(x)
+    
+hello()
+print(x)
 
 
