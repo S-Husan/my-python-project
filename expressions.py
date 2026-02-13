@@ -477,4 +477,6 @@
 
 
 
+# /////////////////
+# Python classes revision
 

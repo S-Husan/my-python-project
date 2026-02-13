@@ -243,3 +243,107 @@
 
 # 2.11.2026
 # New topic
+
+# class haydar:
+#     def __init__ (self,m,h):
+#         self.m =m
+#         self.h= h
+        
+#     def hello(self):
+#         print(self.m,self.h) 
+        
+#     def bye(self):
+#         print(self.h)
+    
+# class zafar(haydar):
+#         def __init__ (self,zm,zh):#              
+#            haydar.__init__(self,zm,zh)#          <---------
+           
+# x = zafar ("100$","Motrid")
+# x.hello()
+
+
+# Super() Functions
+
+
+# class haydar:
+#     def __init__ (self,m,h):
+#         self.m =m
+#         self.h= h
+        
+#     def hello(self):
+#         print(self.m,self.h) 
+        
+#     def bye(self):
+#         print(self.h)
+    
+# class zafar(haydar):
+#         def __init__ (self,zm,zh):#             
+#            super().__init__ (zm,zh)#             <---------we don't need self
+           
+# x = zafar ("100$","Motrid")
+# x.hello()
+
+
+
+# Add properties 
+# class haydar:
+#     def __init__ (self,m,h):
+#         self.m =m
+#         self.h= h
+        
+#     def hello(self):
+#         print(self.m,self.h) 
+        
+#     def bye(self):
+#         print(self.h)
+    
+# class zafar(haydar):
+#         def __init__ (self,zm,zh,zc):         
+#            super().__init__ (zm,zh)
+#            self.zc = zc 
+#         def wife(self):
+#             print("I am going to marry Anora" )
+                  
+# class md (haydar):
+#     # pass
+#     def __init__ (self,mm,mh,mj):
+#         super(). __init__(mm,mh)
+#         self.mj = mj 
+        
+        
+# a = haydar('1000$','Rudaki')          
+# x = zafar ("100$","Motrid",'BMW 5 Competision ƪ(˘⌣˘)ʃ')
+# y =md ('20000$',"gagarin","Developer")
+# print(x.zc)
+# print(y.mj)
+# print(a.h)
+
+# # a.hello()
+# x.hello()
+
+
+
+# MAking list an iterbale elemnts one by one
+
+l = [10,20,30]
+b = iter(l)
+print(next(b))
+print(next(b))
+print(next(b))
+
+
+# we can make string as a iterable
+name = 'Husan'
+b = iter(name)
+print(next(b))
+print(next(b))
+print(next(b))
+print(next(b))
+print(next(b))
+
+
+# Colimorphesm 
+
+
+

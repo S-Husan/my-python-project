@@ -555,17 +555,37 @@
 # a= tuple(c)
 # print(a)
 
-# ////////
+# ////////remove items in the list 
 # a = ('apple','banana')
 # n = list(a)
 # n.remove("apple")
 # a = tuple(n)
 # print(a)
 
+# When we create a tuple we normally arrign values to it.
+# this is called "Packing" a tuple.
+# f = ("apple",'banan','cherry')
+# print(f)
+
+# We are allowed to extract the values back into variables. And this is called "unpacking"
+# f = ("apple",'banan','cherry')
+# (a,b,c) = f
+# print(a)
+# print(b)
+# print(c)
 
 
 
+# Using Asterisk * 
+# If the number of variables is less than the number of values,-
+# you can add an * to the variable name and the values will be assigned -
+# to the variable as a list.
 
+# f = ("apple",'banan','cherry','a','d','f','af')
+# (a,b,c,*d) = f
+# print(a)
+# print(b)
+# print(c)
 
 
 
