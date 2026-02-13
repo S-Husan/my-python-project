@@ -31,7 +31,9 @@
 
 # for x in "Salom":
 #     print(x)
-    
+# for i in "Holla":
+#     print(i)
+
 # String Length 
 # len() function 
 # a = "I am from Samarkand"
@@ -57,6 +59,8 @@
 # 1 Upper() returns the string in upper case
 # a = "Salom"
 # print(a.upper())
+# b ='Hleoo'
+# print(b.upper())
 
 # 2 Lower() returns the string in lowercase
 # a = "HAYIR"
@@ -66,13 +70,17 @@
 # 3 Strip() method removes any space from beginning or at the end
 # a = " skak ee "
 # print(a.strip())
+# a = ' SALOe '
+# print(a.strip())
 
 # Replace String 
 # 4 Replace() replaces string with another one
 # a = "Hell aplla"
 # print(a.replace("l","Bo"))
 # print(a.replace('l','2'))
-# print(a.replace('a','C'))
+# # print(a.replace('a','C'))
+# a = "Hela"
+# print(a.replace('H','L'))
 
 # Split string
 # 5 Split()
@@ -86,7 +94,7 @@
 # c = a + b 
 # print(c)
 
-# String Fromat
+# String Format
 # We can mix string and numbers by using format() method!
 # 6 format()
 # age = 17 
@@ -99,6 +107,14 @@
 # txt = "hi my age is {} ,a and i study at {}, school"
 # print(txt.format(age,school))
 
+# age = 1
+# name = "Kirigaya"
+# t = "hi i am {}, and my name is {}"
+# print(t.format(age,name))
+
+
+
+
 # Module 2
 # NEW TOPICS 
 
@@ -106,12 +122,12 @@
 # ml = "salom bu dunyo"
 # print(ml.capitalize())
 
-# 2 Casefold()
+#  2 Casefold()
 # ml = "SaloM Bu dUnyo"
 # print(ml.casefold())
 
 
-# 3 Cneter , mover elemet to center by using numbers 
+# 3 Center , move's elemet to center by using numbers 
 # txt = 'THIS IS THE CENTER'
 # a = txt.center(167)
 # print(a)
@@ -120,6 +136,8 @@
 # txt = ' i like red apple, green apple, and yellow apple'
 # print(txt.count("apple"))
 # print(txt.count("i"))
+
+
 # BOOLEANS (True or False)
 # print(10 < 9)   /False
 # print(10 == 9)  /False
@@ -220,6 +238,12 @@
 # old.extend(new)
 # print(old) 
 
+# old = [1,2,3]
+# new = [4,5,6]
+# old.append(new)
+# print(old)
+
+
 # new.append(old)
 # print(new)
 
@@ -298,6 +322,14 @@
 #     print(x[i])
 #     i= i + 1
 
+
+# x = ['apple','bnan','cherry']
+# i = 0
+# while i < len(x):
+#     print(x[i])
+#     i = i +1
+
+
 # i = 0
 # while i  < len(x):
 #     print(x[i])
@@ -306,10 +338,10 @@
 # Looping Using List Comprehension
 # List Comprehension offers the shortest syntax for looping through lists.
 # A shorthand for loop that will print all items in a list.
-# y= ["apple", "banana", "cherry"]
+# x = ["apple", "banana", "cherry"]
 # # [print(i) for i in y]
 
-
+# [print(i) for i in x ]
 # Revision
 # y= ["apple", "banana", "cherry"]
 # [print(x) for x in y]
@@ -386,6 +418,7 @@
 # z.sort(reverse= True)
 # print(z)
 
+
 # Case insensitive sort
 # By default the sort() is case_sensitive, sorting all capital letters before lowercase letters.
 # x = ['APplE','skd','cucumber','pineapple']
@@ -428,9 +461,10 @@
 # a = [12]
 # b = [13,4,5]
 # for i in b:
-#     a.append(x)
-    # “Put value at the end of list a.”
-    # “Take the current number stored in i and put it into list a.”
+#     a.append(i)
+    
+#     # “Put value at the end of list a.”
+#     # “Take the current number stored in i and put it into list a.”
 # print(a)        
 
 
@@ -508,22 +542,26 @@
 # Converting tuple to list and after changing values ,converting back to tuple()
 # x =("apple","banna","cherry")
 # y = list(x)
-# add element 
+# //////add element 
 # y.append("Cucumber")
 # change element by using it's index
 # y[1]= "kiwi"
 # x = tuple(y)
 # print(x) 
 
-# Revision
-# x = ('2','3','4')
-# new = list(x)
-# new.append("Sosages")
-# x = tuple(new)
-# print(x)
+# a = (1,2,3,4)
+# c = list(a)
+# c.append(5)
+# a= tuple(c)
+# print(a)
 
+# ////////
+# a = ('apple','banana')
+# n = list(a)
+# n.remove("apple")
+# a = tuple(n)
+# print(a)
 
-print("hello, world")
 
 
 
