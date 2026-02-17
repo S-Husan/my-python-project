@@ -479,4 +479,35 @@
 
 # /////////////////
 # Python classes revision
+# Preperations for exams
+
+# ArraysPython does not have built-in support for Arrays, but Lists can be used instead.
+# Functions
+
+# def m():
+#     print('hello')
+# m()
+
+
+# def l(username):
+#     print(username +  ':is your user name')
+# l("Kirito")
+
+
+# def name(sname,name):
+#     print(sname +":"+ name)
+# name('Husan',' sayfiyev')
+
+
+# default
+# def m(country = "uzb"):
+#     print( "i am from "+ country)
+# m('india')
+# m()
+
+
+# def my(x):
+#     return 5 * x
+# print(my(3))
+
 
