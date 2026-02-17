@@ -510,4 +510,48 @@
 #     return 5 * x
 # print(my(3))
 
+# def evenodd(x):
+#     if (x % 2 == 0):
+#         print("even")
+#     else:
+#         print("odd")
+# evenodd(5)    
 
+
+# ////////////////////////////
+# def my(l):
+#     if (l == 0):
+#         print("not a correct number")
+#     elif ( l % 2 == 0):
+#         print("even")
+#     else:print("odd")
+    
+# my(0)
+# ////////////////////////////
+
+
+# def Myfun(x,y = 50):
+#     print("x:",x)
+#     print("y:",y)
+# Myfun(23)
+
+
+# User definced functions
+def add_n(x,y):
+    sum = x + y
+    return sum
+num1 = 5
+num2 = 4
+print("The sum is", add_n (num1,num2))
+
+
+
+
+
+
+def names(l,f):
+    both = l + f
+    return f"{l} and {f}"
+name1= "ali" 
+name2= " muslim" 
+print("These are the names of :", names(name1, name2))
