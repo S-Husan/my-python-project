@@ -537,21 +537,43 @@
 
 
 # User definced functions
-def add_n(x,y):
-    sum = x + y
-    return sum
-num1 = 5
-num2 = 4
-print("The sum is", add_n (num1,num2))
+# def add_n(x,y):
+#     sum = x + y
+#     return sum
+# num1 = 5
+# num2 = 4
+# print("The sum is", add_n (num1,num2))
 
 
 
 
 
 
-def names(l,f):
-    both = l + f
-    return f"{l} and {f}"
-name1= "ali" 
-name2= " muslim" 
-print("These are the names of :", names(name1, name2))
+# def names(l,f):
+#     both = l + f
+#     return f"{l} and {f}"
+# name1= "ali" 
+# name2= " muslim" 
+# print("These are the names of :", names(name1, name2))
+
+
+# def chatbot():
+#     """Implements a simple chatbot with 3 conversations."""
+# conversation = {
+#         "hello":"hi bitch",
+#         "what is your name":'this is not your business!',
+#         "by":"go faster sheet color"
+#     }
+    
+# while True:
+#         user_input=input('you:').lower()
+#         if user_input in conversation:
+#             print("Bot:",conversation[user_input])
+#         else:
+#             print("bot:,I am not sure and fuck yourself for asking such a questions" ) 
+#             if user_input=='goodby':
+#              break
+         
+# if __name__=="__main__":
+#             chatbot()
+        
