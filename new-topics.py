@@ -458,12 +458,26 @@
 # Naming Variables
 
 
-x =300
-def hello():
-    x= 200
-    print(x)
+# x =300
+# def hello():
+#     x= 200
+#     print(x)
     
-hello()
-print(x)
+# hello()
+# print(x)
 
 
+
+# MODULES 
+
+
+
+# import untiteled1
+# print('i am importing')
+# print(ai.ai["sname"])
+
+
+
+import platform
+
+print(platform.system())
