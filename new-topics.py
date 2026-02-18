@@ -582,4 +582,47 @@ import datetime as dt
 # %j  day in a year
 # y = dt.datetime.now()
 # print(y.strftime("%j"))
+# ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+# |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+# |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+# ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+# new Module
 
+# Matimcatical related functions
+# Math
+
+
+# max find maximum value
+# x = [10,20,30,44557,76543,754,267545,556752,5,9,87,98765432,123456789,7,557755443,8756,83,685,5678,3567,3567,36789,57,65,2986,75645,765334,5645436,76543,876543,76545,65,567,455667,4567,56,6556]
+# print(max(x))
+
+
+# abs means absolute
+# x = [1,34,-45]
+# print(abs(x[2]))
+
+# pow help to find any degree
+# print(pow(2,3))
+
+# previese things are build in functions
+
+
+
+
+# Math module
+
+# math with "sqrt" finds the sqeare of any number 
+# import math
+# print(math.sqrt(49))
+
+
+# math ceil() this is a  function is for sounding purpose 
+# import math 
+# ceil for upword direction
+# print(math.ceil(1.6))
+# floor for downword direction
+# print(math.floor(1.6))
+
+# math.pi => 3,14
+# import math
+# print(math.pi)
