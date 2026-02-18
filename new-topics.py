@@ -504,13 +504,13 @@
 # x = dt.datetime.now()
 # print(x.strftime("%A")) # % here means i want to present week
 
-
+import datetime as dt
 
 # /////////////////////////////// 
 # %B shows months
-import datetime as dt
-y = dt.datetime.now()
-print(y.strftime("%B"))
+# import datetime as dt
+# y = dt.datetime.now()
+# print(y.strftime("%B"))
 
 
 # ////////////////////////////
@@ -552,8 +552,34 @@ print(y.strftime("%B"))
 # y = dt.datetime.now()
 # print(y.strftime("%H"))
 
+#           <=\\
+#             \\==\\
+#                  \\=>
 
 # /////////////////////
 # %I  shows hours 00-12
 # y = dt.datetime.now()
 # print(y.strftime("%I"))
+
+# ////////////////////////
+# %p shows , wether hour is pm or am
+# import datetime as dt
+# y = dt.datetime.now()
+# print(y.strftime("%p"))
+
+
+# ////////////////////////
+# %M shows minutes
+# y = dt.datetime.now()
+# print(y.strftime("%M"))
+
+# ////////////////////////
+# %S shows seconds
+# y = dt.datetime.now()
+# print(y.strftime("%S"))
+
+# ////////////////////////
+# %j  day in a year
+# y = dt.datetime.now()
+# print(y.strftime("%j"))
+
