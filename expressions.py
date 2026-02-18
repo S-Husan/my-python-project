@@ -573,8 +573,6 @@
 #             print("bot:,I am not sure and fuck yourself for asking such a questions" ) 
 #             if user_input=='goodby':
 #              break
-         
-# if __name__=="__main__":
 #             chatbot()
         # ////////////////////////////////////////////////////////
         # ////////////////////////////////////////////////////////
@@ -596,3 +594,28 @@
 #     result = f(n)
 # print("The factorial of" ,n,"is",result)
 # f(45)    
+
+
+# Modefy  object properties
+# class P():
+#     def __init__(self,name,age):
+#         self.name= name
+#         self.age= age
+# a = P("husan",17)
+# print(a.name)     
+
+
+# Delete Objects 
+# You can delete objects by using the del keyword.
+# class P():
+#     def __init__(self,name,age):
+#         self.name= name
+#         self.age= age
+# a = P("husan",17)
+# print(a.name)     
+
+# del a
+# pass
+
+
+# classes and objects
