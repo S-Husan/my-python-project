@@ -477,7 +477,23 @@
 # print(ai.ai["sname"])
 
 
+# new topic 2.18.2026
 
-import platform
+# Datetime
+print('=-----------------------=')
+import datetime as dt
+x = dt.datetime.now()
+print(x)
+a = x.year
+print('=------------------------=')
+print(x.strftime("today is %A")) # str = string , f = format, time = time
 
-print(platform.system())
+# Creating date objects
+
+
+import datetime as dt
+y = dt.datetime(2008,4,5)
+print(y)
+print(x-y)
+b=y.year
+print(a-b)
