@@ -480,20 +480,80 @@
 # new topic 2.18.2026
 
 # Datetime
-print('=-----------------------=')
+# print('=-----------------------=')
+# import datetime as dt
+# x = dt.datetime.now()
+# print(x)
+# a = x.year
+# print('=------------------------=')
+# print(x.strftime("today is %A")) # str = string , f = format, time = time
+
+# # Creating date objects
+
+
+# import datetime as dt
+# y = dt.datetime(2008,4,5)
+# print(y)
+# print(x-y)
+# b=y.year
+# print(a-b)
+
+
+# ////////////// Strinftime() method , dates will be converted to string format 
+# import datetime as dt
+# x = dt.datetime.now()
+# print(x.strftime("%A")) # % here means i want to present week
+
+
+
+# /////////////////////////////// 
+# %B shows months
 import datetime as dt
-x = dt.datetime.now()
-print(x)
-a = x.year
-print('=------------------------=')
-print(x.strftime("today is %A")) # str = string , f = format, time = time
-
-# Creating date objects
+y = dt.datetime.now()
+print(y.strftime("%B"))
 
 
-import datetime as dt
-y = dt.datetime(2008,4,5)
-print(y)
-print(x-y)
-b=y.year
-print(a-b)
+# ////////////////////////////
+# numbers of a week
+# %w  index number of a week days
+# days   :sun mon tus wed thur fn sat
+# indexes:0   1   2   3   4    5  6   
+
+# import datetime as dt
+# y = dt.datetime.now()
+# print(y.strftime("%w"))
+
+# /////////////////////
+# %d shows date
+# import datetime as dt
+# y = dt.datetime.now()
+# print(y.strftime("%d"))
+
+
+
+# /////////////////////
+# %m shows number of month
+# import datetime as dt
+# y = dt.datetime.now()
+# print(y.strftime("%m"))
+
+
+
+# /////////////////////
+# %y or %Y shows year 
+# import datetime as dt
+# y = dt.datetime.now()
+# print(y.strftime("%Y"))
+
+
+# /////////////////////
+# %H  shows hours  00-23
+# import datetime as dt
+# y = dt.datetime.now()
+# print(y.strftime("%H"))
+
+
+# /////////////////////
+# %I  shows hours 00-12
+# y = dt.datetime.now()
+# print(y.strftime("%I"))
