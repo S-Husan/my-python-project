@@ -628,8 +628,70 @@ import datetime as dt
 # print(math.pi) 
 
 
+
+
+
+
+
+
+
+
+
 # New Topic
 # Json
 # java script object rotaions
 # to store and exchange data from one system to another system 
+# loading the page calls buferring
+# passing means scanning or compiling 
+# Syntaxis is important
+# json format is format of strings
+# json.loads()
 
+# converting json to python
+# import json
+# x = '{"name":"John","city":"SKD"}'
+# print(x)
+# print(type(x))
+# y = json.loads(x)
+# print(y)
+# print(type(y))
+# print(y["name"])
+
+# converting python to Json
+
+# we can canvert any data type
+
+
+# RegEx =======> "re" (in code)
+# Regular expressions
+#  spining pen 
+
+# import re 
+# x = "The rain in Spain"
+# y= re.search("^The.*Spain$",x)
+# # print(y)
+# if y:
+#     print('Yes! we have the match')
+# else:
+#     print("No match")
+    
+    
+# REgEx functions 
+# Build in   
+# Findall functions returnes a list containing all matches   
+# search Returns a Match object if there is a mtch anywhere in the string
+# split Return a list where the strig has been split at ecah match 
+# sub Replaces one or many matches with s string 
+
+
+# Findall()
+# import re 
+# x = "The rain in Spain and gain and spain"
+# y = re.findall("a",x)
+# print(y)
+# print(type(y))
+# print(len(y))
+
+
+# Search()
+import re
