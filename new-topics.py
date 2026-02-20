@@ -684,7 +684,7 @@ import datetime as dt
 # sub Replaces one or many matches with s string 
 
 
-# Findall()
+# Findall() will search all
 # import re 
 # x = "The rain in Spain and gain and spain"
 # y = re.findall("a",x)
@@ -693,5 +693,18 @@ import datetime as dt
 # print(len(y))
 
 
-# Search()
-import re
+# Search() will search first 
+# import re
+# x = "The rain in Spain and gain and spain"
+# y = re.findall("ai",x)
+# print("The fist ai stric is located in position:",y.start()) # start() indicates the exact location
+
+
+
+
+# IGNORECASE )==> ignores coase sensitev txt
+# import re
+# x = "The rAin in Spain and gain and spain"
+# y = re.findall("ai",x,re.IGNORECASE)
+# print("The fist ai stric is located in position:",y.start()) # start() indicates the exact location
+
