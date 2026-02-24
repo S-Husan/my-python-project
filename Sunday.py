@@ -589,4 +589,46 @@
 
 
 
+# classes and objects
+# Modify properties on objects
+# class person:
+#     def __init__(self,name,age):
+#         self.name = name
+#         self.age = age
+#     def my_function(self):
+#          print("Hello my name is " + self.name)
+# p1 = person('Husan',221) 
+# p1.age= 40
+# print(p1.name)   
+# print(p1.age)   
 
+# My example
+
+# class Car:
+#     def __init__ (CarNAME,Name,year,price):
+#         CarNAME.name= Name
+#         CarNAME.year = year
+#         CarNAME.price = price
+#     def BMW(CarNAME):
+#         car = Car("BMW",1999,1000.00)
+#         print(CarNAME.name)    
+#         print(car.name)
+
+
+class Car:
+    def __init__(self, name, year, price):
+        self.name = name
+        self.year = year
+        self.price = price
+
+    def show(self):
+        print("Cars name :" + self.name)
+        print("Year :" + str(self.year))
+        print("Price : "+ str(self.price))
+
+
+# Create object
+car1 = Car("BMW", 1999, 1000.00)
+
+# Call method
+car1.show()
