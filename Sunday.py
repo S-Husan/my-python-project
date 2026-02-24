@@ -615,20 +615,37 @@
 #         print(car.name)
 
 
-class Car:
-    def __init__(self, name, year, price):
+# class Car:
+#     def __init__(self, name, year, price):
+#         self.name = name
+#         self.year = year
+#         self.price = price
+
+#     def show(self):
+#         print("Cars name :" + self.name)
+#         print("Year :" + str(self.year))
+#         print("Price : "+ str(self.price))
+
+
+# # Create object
+# car1 = Car("BMW", 1999, 1000.00)
+# car2 = Car("Mersides",2000,1299.00)
+
+# # Call method
+# car1.show()
+# car2.show()
+
+
+# Delete Object Properties 
+# by using the del keyword
+
+
+class student():
+    def __init__(self,name,Class):
         self.name = name
-        self.year = year
-        self.price = price
+        self.Class =Class
+    def New_students(self):
+        print(self.name)
+s1 = student('ali',19)
 
-    def show(self):
-        print("Cars name :" + self.name)
-        print("Year :" + str(self.year))
-        print("Price : "+ str(self.price))
-
-
-# Create object
-car1 = Car("BMW", 1999, 1000.00)
-
-# Call method
-car1.show()
+s1.New_students()
