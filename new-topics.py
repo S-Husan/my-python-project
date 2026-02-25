@@ -504,7 +504,7 @@
 # x = dt.datetime.now()
 # print(x.strftime("%A")) # % here means i want to present week
 
-import datetime as dt
+# import datetime as dt
 
 # /////////////////////////////// 
 # %B shows months
@@ -605,9 +605,7 @@ import datetime as dt
 # print(pow(2,3))
 
 # previese things are build in functions
-
-
-
+# 
 
 # Math module
 
@@ -626,17 +624,7 @@ import datetime as dt
 # math.pi => 3,14
 # import math
 # print(math.pi) 
-
-
-
-
-
-
-
-
-
-
-
+# 
 # New Topic
 # Json
 # java script object rotaions
@@ -676,6 +664,11 @@ import datetime as dt
 #     print("No match")
     
     
+#  //////////////////////////////////////////////////////////////////////////////////////////////
+#  //////////////////////////////////////////////////////////////////////////////////////////////
+#  //////////////////////////////////////////////////////////////////////////////////////////////
+#  //////////////////////////////////////////////////////////////////////////////////////////////
+    
 # REgEx functions 
 # Build in   
 # Findall functions returnes a list containing all matches   
@@ -707,4 +700,48 @@ import datetime as dt
 # x = "The rAin in Spain and gain and spain"
 # y = re.findall("ai",x,re.IGNORECASE)
 # print("The fist ai stric is located in position:",y.start()) # start() indicates the exact location
+
+# /=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=>/
+# /=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=>/
+# /=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=>/
+# />,'[*$#!!@)(*%&%$><:{}"?|\?/~~~~~~~~~|?"><:{+(&^%$
+# 2.25.2026
+# New topic
+
+
+# Split <========
+import re
+# txt= "The rain un Spain"
+# x =re.split('\s',txt)
+# print(x)
+# print(x[0])
+# print(x[1])
+# print(x[2])
+# print(x[3])
+
+
+# for i in txt:
+#     print(i)
+    
+# Sub function =====> substitude means replace
+# x = "SIUT"
+# # replace(searching,replacing,source)
+# # replace(\s),9,x)
+# x = re.sub("S","SAMARKAND",x)
+
+
+#//////////////////////////
+# |s means space   <<<<<<<|
+#//////////////////////////
+
+
+# Metacharacters 
+# First metchacharacter  ===> [] (this is polymorphisim)
+# [] ==> means container where we can store something , this is a set of characters
+# this finds all lower-case characters in alphabetically
+# between'a' and 'z'
+
+txt=("the eain in Spain")
+x = re.findall("[A-Z]",txt)
+print(x)
 
