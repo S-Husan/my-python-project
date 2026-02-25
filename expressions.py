@@ -618,4 +618,14 @@
 # pass
 
 
-# classes and objects
+class Siut_student():
+        def __init__ (self,faculety,lvl):
+                self.faculety = faculety
+                self.lvl = lvl
+        def Ai(self):
+                print("Husan study in " + self.faculety)
+st = Siut_student("Computer Science","Freshmen")
+st.Ai()
+
+st.lvl = "2 nd year"
+print(st.lvl)
