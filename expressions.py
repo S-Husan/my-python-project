@@ -618,14 +618,19 @@
 # pass
 
 
+
+# my own example of how to use del in class 
 class Siut_student():
         def __init__ (self,faculety,lvl):
                 self.faculety = faculety
-                self.lvl = lvl
+                self.lvl = lvl  
         def Ai(self):
                 print("Husan study in " + self.faculety)
 st = Siut_student("Computer Science","Freshmen")
-st.Ai()
+st.Ai()         
 
-st.lvl = "2 nd year"
-print(st.lvl)
+
+# st.lvl = "2 nd year"
+# print(st.lvl)
+# del st.faculety
+print(st.faculety)
