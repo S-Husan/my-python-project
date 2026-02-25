@@ -771,6 +771,40 @@ import re
 
 
 # Next metachaeacter ($) forces any chacter to be at the end in the line 
-t ="hello planet"
-x = re.findall("planet$",t)
-print(x)
+# t ="hello planet"
+# x = re.findall("^hello",t)
+# x = re.findall("planet$",t)
+# print(x)
+
+
+
+
+# USIng many metacharacters
+# t ="The rain in Spain"
+# x = re.search("^The.*Spain$",t)
+# print(x)
+# if x:
+#     print("We have a match")
+# else:
+#     print("No match")
+    
+    
+# Rearching any number of charcaters with (. and *)
+# t ="The rain in Sayfiyev Husan"
+# x = re.findall("S.*n",t)
+# print(x)
+
+# next metacharacter is (+) means one or more 
+# t ="Sun"
+# x = re.findall("S.+n",t)
+# print(x)
+
+
+
+# next metacharacter is (?) means 0 or one occurences needed
+# t ="Sn"
+# x = re.findall("S.?n",t)
+# print(x)
+
+
+# next metacharacter is ({}) exactly the specidid number of occurrences
