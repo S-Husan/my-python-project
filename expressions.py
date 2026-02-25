@@ -620,17 +620,85 @@
 
 
 # my own example of how to use del in class 
-class Siut_student():
-        def __init__ (self,faculety,lvl):
-                self.faculety = faculety
-                self.lvl = lvl  
-        def Ai(self):
-                print("Husan study in " + self.faculety)
-st = Siut_student("Computer Science","Freshmen")
-st.Ai()         
+# class Siut_student():
+#         def __init__ (self,faculety,lvl):
+#                 self.faculety = faculety
+#                 self.lvl = lvl  
+#         def Ai(self):
+#                 print("Husan study in " + self.faculety)
+# st = Siut_student("Computer Science","Freshmen")
+# st.Ai()         
 
 
-# st.lvl = "2 nd year"
-# print(st.lvl)
-# del st.faculety
-print(st.faculety)
+# # st.lvl = "2 nd year"
+# # print(st.lvl)
+# del st
+# print(st)
+
+
+
+# exmaple of how to delate objectin class and functions
+# class Siut_student():
+#         def __init__ (self,faculety,lvl):
+#                 self.faculety = faculety
+#                 self.lvl = lvl  
+#         def Ai(self):
+#                 print("Husan study in " + self.faculety)
+# st = Siut_student("Computer Science","Freshmen")
+# st.Ai()         
+
+
+
+# del st
+# print(st)
+
+
+#////////////////////////======333333====================== /
+
+# Classe and objects
+# Python is an object-oriented programming language.
+# Almost everything in Python is an object with its properties and methods.
+# A Class is like an object constructor or a "blueprint" for creating objects.
+# 
+
+# class My_class():
+#         x =5
+# p1 = My_class()
+# print(p1.x)
+
+
+# __init__ function
+
+# class Student():
+#         def __init__(self,name,age):
+#                 self.name =name
+#                 self.age =age
+# p1 = Student("husan" ,"19")
+
+# print("Student's name is " + p1.name)
+# print("And he is " + p1.age+" years old" )
+
+
+
+
+
+
+
+# self parametr
+# The self parameter refers to the current instance of the class and is used to access variables that belong to the class.
+# It does not have to be named self; you can call it whatever you like, but it has to be the first parameter of any function in the class. 
+# self tells Python: "Store this data on THIS specific object"
+
+
+# /////////////////////////////////////////////////////////////////////////////////
+# Object Methods
+# Objects can also contain methods. Methods in objects are functions that belong to the object.
+
+class Person:
+  def __init__(self, name, age):
+    self.name = name  #<=== they are functions (methods in other places)
+    self.age = age  #<=== they are functions (methods in other places)
+  def myfunc(self):
+    print("Hello my name is " + self.name)
+p1 = Person("John", 36)
+p1.myfunc()
