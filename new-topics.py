@@ -741,7 +741,36 @@ import re
 # this finds all lower-case characters in alphabetically
 # between'a' and 'z'
 
-txt=("the eain in Spain")
-x = re.findall("[A-Z]",txt)
-print(x)
+# txt=("the eain in Spain")
+# x = re.findall("[A-Z]",txt)
+# print(x)
 
+# Singals a specia sequence
+# txt=("That will be 59 dollars")
+# # Find all digit characters
+# x = re.findall("\d",txt)
+# print(x)
+
+
+#  next metacharcter is dot(.) means any character ==> exept newline character
+# txt=("hello planet hebao")
+# Find all digit characters
+# x = re.findall("he..o",txt)
+# print(x)
+# it works because the length is correct 
+# and published characters at the start and end are correct
+
+
+
+
+# metacharacter (^) cap sybmole===> forces any chacter to begin 1st in the line 
+# t ="hello planet"
+# x = re.findall("^hell",t)
+# print(x)
+
+
+
+# Next metachaeacter ($) forces any chacter to be at the end in the line 
+t ="hello planet"
+x = re.findall("planet$",t)
+print(x)
