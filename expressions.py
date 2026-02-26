@@ -694,11 +694,92 @@
 # Object Methods
 # Objects can also contain methods. Methods in objects are functions that belong to the object.
 
-class Person:
-  def __init__(self, name, age):
-    self.name = name  #<=== they are functions (methods in other places)
-    self.age = age  #<=== they are functions (methods in other places)
-  def myfunc(self):
-    print("Hello my name is " + self.name)
-p1 = Person("John", 36)
-p1.myfunc()
+# class Person:
+#   def __init__(self, name, age):
+#     self.name = name  #<=== they are functions (methods in other places)
+#     self.age = age  #<=== they are functions (methods in other places)
+#   def myfunc(self):
+#     print("Hello my name is " + self.name)
+# p1 = Person("John", 36)
+# p1.myfunc()
+
+
+
+
+# Inheretance
+# Inheritance allows us to define a class that inherits another class’s methods and properties.
+# Parent class is inherited from, also called base class.
+# Child class is the class that inherits from another class, also called derived class.
+
+# =========================
+# Parent Class (Base Class)
+# =========================
+class Animal:
+    # Constructor of the parent class
+    def __init__(self, name):
+        self.name = name   # Property (attribute)
+
+    # Method of the parent class
+    def speak(self):
+        print("The animal makes a sound")
+
+
+# =========================
+# Child Class (Derived Class)
+# =========================
+class Dog(Animal):   # Dog inherits from Animal
+    # Constructor of child class
+    def __init__(self, name, breed):
+        # Calling parent constructor using super()
+        super().__init__(name)
+        self.breed = breed  # New property specific to Dog
+
+    # Method overriding (same method name as parent)
+    def speak(self):
+        print(self.name + " says Woof!")
+
+
+# =========================
+# Creating Objects
+# =========================
+dog1 = Dog("Rex", "German Shepherd")
+
+dog1.speak()        # Calls overridden method in Dog
+print(dog1.name)    # Inherited property from Animal
+print(dog1.breed)   # Property defined in Dog
+
+
+# ==============================================================================
+# super() is a built-in function that allows a 
+# child class to access methods and properties of its parent (base) class.
+# ==============================================================================
+
+
+# class birds():
+#         def __init__ (self,name,age):
+#                 self.name =name
+                
+# class eagle(birds):
+#         def __init__(self,type,age):
+#                 super().__init__ (type)
+#                 self.type = type
+                 
+# e = eagle("12","hunter")
+# print(e.type)
+# print(e.type)
+
+
+class Animal:
+        def __init__(me, type): 
+                me.type = type 
+                
+        def method(me):
+                me.type()
+
+class Dog(Animal):
+        def __init__(me, type, sound):
+                me.sound = sound
+                super().__init__(type)
+
+a1 = Dog("dog", "sound")
+print(a1.type)
