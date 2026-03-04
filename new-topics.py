@@ -893,6 +893,33 @@ import re
 
 # Range from [a-n]
 
-txt = "The rain in Spain2_"
-x = re.findall("[a-n]", txt)
-print(x)
+# txt = "The rain in Spain2_"
+# x = re.findall("[a-n]", txt)
+# print(x)
+
+
+
+
+# [^] avoids charactres listen in [^]
+# txt = "The rain in Spain2_"
+# x = re.findall("[^a]", txt)
+# print(x)
+
+
+
+# txt = "The rain in Spain2_"
+# x = re.findall("[0-1]", txt)
+# print(x)
+
+
+# returning bor big letter and small
+# txt = "The rain in Spain2_"
+# x = re.findall("[a-zA-Z]", txt)
+# print(x)
+
+# searchs only + 
+# txt = "The rain in Spain2_"
+# x = re.findall("[+]", txt)
+# print(x)
+
+
