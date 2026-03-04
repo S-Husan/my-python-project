@@ -649,6 +649,7 @@
 
 # we can canvert any data type
 
+import re
 
 # RegEx =======> "re" (in code)
 # Regular expressions
@@ -709,8 +710,11 @@
 # New topic
 
 
+
+
+
 # Split <========
-import re
+
 # txt= "The rain un Spain"
 # x =re.split('\s',txt)
 # print(x)
@@ -808,3 +812,87 @@ import re
 
 
 # next metacharacter is ({}) exactly the specidid number of occurrences
+
+
+# New tipic 3.4.2026
+# Metacharacters
+
+# txt = "The rain in Spain"
+# x = re.findall('he.{3}o',txt)
+# print(x)
+
+
+# txt = "helal hella hala hello worl"
+# x = re.findall("helal | hello ",txt)
+# print(x)
+
+
+# Special sequeances ==> checks if the string starts with "The"
+
+# txt = "The rain in Spain"
+# x = re.findall("/A The", txt)
+# print(x)
+
+
+# \b returs a match where the specified characyers are at the beginning or at the end of a word(the
+# "r" in the beffining is making sure that the string is being treated as a "row")
+# txt = "The rain in Spain"
+# x = re.findall(r"\brain", txt)
+# print(x)
+
+    
+    
+    
+# \d 
+
+# txt = "The rain in Spain2"
+# x = re.findall("\d", txt)
+# print(x)
+
+
+
+# \s to find white spaces we need to use spaces and \S
+# txt = "The rain in Spain2"
+# x = re.findall("\S", txt)
+# print(x)
+
+
+
+# \w returns a match contains any word characyers from A to Z only
+# txt = "The rain in Spain2"
+# x = re.findall("\w", txt)
+# print(x)
+
+
+# \W retuerns a match where  word does not have any caracters from a to z 
+# txt = "The rain in Spain2"
+# x = re.findall("\\W", txt)
+# print(x)
+
+
+
+
+
+# # 
+# txt = "The rain in Spain2_"
+# x = re.findall("2\Z", txt)
+# print(x)
+
+
+
+# Sets 
+# A set is a set of characyers inside a pair of sqeare breackets [] with a special meaning
+# arn  -Returns a match where one of the 
+
+# txt = "The rain in Spain2_"
+# x = re.findall("[arn]", txt)
+# print(x)
+
+
+
+
+# Range from [a-n]
+
+txt = "The rain in Spain2_"
+x = re.findall("[a-n]", txt)
+print(x)
