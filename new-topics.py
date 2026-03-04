@@ -923,3 +923,9 @@ import re
 # print(x)
 
 
+# PIP insalls packages/preferred installer profram 
+# import camelcase as cc
+
+# c = cc.CamelCase()
+# x = c.hump("hellow world")
+# print(x)
