@@ -1009,7 +1009,9 @@ import re
 
 try:
     open("new-topics.py",'r')
-except FileNotFoundError:
+except FileExistsError:
     print("Fie not found")
 else:
     print("File opened succussfully")
+finally:
+    print("This block will alwaus execute , regardless of excetions ")
