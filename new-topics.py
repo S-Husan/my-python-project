@@ -929,3 +929,87 @@ import re
 # c = cc.CamelCase()
 # x = c.hump("hellow world")
 # print(x)
+
+
+# ////////////////////////////////////////////////////////////
+# ////////////////////////////////////////////////////////////
+# ////////////////////////////////////////////////////////////
+
+
+# Exceptions hendling
+# Try Except
+# try:
+#     print(x)
+# except:
+#     print("An exception occurred")
+
+
+# 3.6.2026
+
+# try:
+#     x =10
+#     print(x)
+#     print(y)
+# except NameError:
+#     print("Variable 'x' is not definde")
+    
+# try: /
+    # a = 10/0
+# except ZeroDivisionError: #  <====== THis si built in exception function ) for raseing the error
+    # print("You cannot divide by zero")
+
+# try:
+#     int('abc')
+# except ValueError:
+#     print("Cought a valueError: Cannot convert 'abc' to an integer")
+
+
+# try:
+#     a =10
+#     b = "5"
+#     x =a +b
+# except TypeError:
+#     print("Caught a TypeError: Cannot add integers")
+
+
+# try:
+#     a = {
+#         "name":"Jhone",
+#         "Age":30,
+#         "City":"New York"
+#     }
+#     print(a["nme"])
+# except KeyError:
+#     print("key not found in the dictionary")
+    
+    
+# try:
+#     open("new-topic.py","r")
+# except  FileNotFoundError:
+#     print("Finle not dound")
+    
+    
+# try:
+#     a =10
+#     b =20
+#     c =a+b
+# except NameError:
+#     print("Varable 'd' is not definde")
+
+
+# try:
+#     number  = int(input("Enter a number: "))
+#     result = 10 / number 
+#     print(f"Rsult is {result}")
+# except ZeroDivisionError:
+#     print("You can't divide by zero!")
+# except ValueError:
+#     print("That is not aa valid number !")
+    
+
+try:
+    open("new-topics.py",'r')
+except FileNotFoundError:
+    print("Fie not found")
+else:
+    print("File opened succussfully")
