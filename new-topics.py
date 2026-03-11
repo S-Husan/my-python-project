@@ -1053,8 +1053,14 @@ print(txt.format(price))
 
 
 # Index numbers 
-price = 49 
-order = 3
-total_price = price * order
-txt = "The price of each mouse is {0:.1f} dollars & i want to order {1:.2f} items and total price is {2:.2f}"
-print(txt.format(price,order,total_price ))
+# price = 49 
+# order = 3
+# total_price = price * order
+# txt = "The price of each mouse is {0:.1f} dollars & i want to order {1:.2f} items and total price is {2:.2f}"
+# print(txt.format(price,order,total_price ))
+
+
+
+# ///////////////////////////////////////
+# NEW TOPIC, IMPORTANT!!!
+# File Handling
