@@ -1029,9 +1029,9 @@ import re
 
 
 # String formating 
-price  = 49 
-txt = "The price is {} dollars"  #{} < ==colled  placeholders
-print(txt.format(price))
+# price  = 49 
+# txt = "The price is {} dollars"  #{} < ==colled  placeholders
+# print(txt.format(price))
 
 
 
@@ -1064,3 +1064,30 @@ print(txt.format(price))
 # ///////////////////////////////////////
 # NEW TOPIC, IMPORTANT!!!
 # File Handling
+
+
+
+# old model of openning files
+# f = open("TEST.txt","r")    
+# print(f.read())
+# f.close()  <==\\
+#                \\ ==> we need to close file 
+
+
+
+# ////////////
+# Buffer freshing 
+
+# new model of openning files
+# with open ("TEST.txt", "r") as f:
+#     content = f.read()
+#     print(content)
+    
+    
+with open('test.txt','r') as file:
+    print(f'File name:{file.name}')
+    print(f'File mode:{file.mode}')
+    print(f'Is the file closed:{file.closed}')
+    print(f'File endcoding:{file.encoding}')
+file.close()
+print(f'Is the file closed:{file.closed}')

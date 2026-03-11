@@ -639,13 +639,35 @@
 # Delete Object Properties 
 # by using the del keyword
 
+# //////////////////////////////////////////////
+# Class Definition
+# A blueprint/template for creating objects
+class Student:
 
-class student():
-    def __init__(self,name,Class):
+    # Constructor (Special method / Dunder method)
+    # Automatically runs when a new object is created
+    # Used to initialize instance attributes
+    def __init__(self, name, grade):
+
+        # Instance attributes (Object attributes / Member variables)
+        # These store data inside the object
         self.name = name
-        self.Class =Class
-    def New_students(self):
-        print(self.name)
-s1 = student('ali',19)
+        self.grade = grade
 
-s1.New_students()
+    # Instance Method
+    # A function that belongs to the class and works on an object
+    def show(self):
+
+        # Accessing an instance attribute
+        # Reading data stored inside the object
+        print(self.name)
+
+
+# Object Instantiation
+# Creating an instance of the class
+# s1 is an object reference
+s1 = Student('Ali', 19)
+
+# Method Call (Method Invocation)
+# Calling an instance method on the object
+s1.show()

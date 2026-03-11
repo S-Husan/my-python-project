@@ -1,0 +1,7 @@
+Student: Husan
+Age: 17
+Email: sayfiyevhusan777@gmail.com
+Skill: Java, Python
+Number of projects: 1
+Lenguage: Rus,Eng,Uzb,Taj,a bit binary
+СРВВрашаг
