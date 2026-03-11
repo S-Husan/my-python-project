@@ -1007,11 +1007,54 @@ import re
 #     print("That is not aa valid number !")
     
 
-try:
-    open("new-topics.py",'r')
-except FileExistsError:
-    print("Fie not found")
-else:
-    print("File opened succussfully")
-finally:
-    print("This block will alwaus execute , regardless of excetions ")
+# try:
+#     open("new-topics.py",'r')
+# except FileExistsError:
+#     print("Fie not found")
+# else: 
+#     print("File opened succussfully")
+# finally:
+#     print("This block will alwaus execute , regardless of excetions ")
+    
+    
+# x = -1 
+# if x < 0:
+#     raise Exception('Neagtive value is not allowed')
+        
+    
+
+# 1. Define your custom exception
+
+# class InvalidInput (Exception):
+
+
+# String formating 
+price  = 49 
+txt = "The price is {} dollars"  #{} < ==colled  placeholders
+print(txt.format(price))
+
+
+
+# 3.11.2026
+
+# price = 49 
+# order = 3
+# txt = "The price of each mouse is {} dollars & i want to order {} items"
+# print(txt.format(price,order))
+
+
+# Numbers formating with desimal point (.000)
+# :.2f ===> means two fractional points
+# price = 49 
+# order = 3
+# txt = "The price of each mouse is {:.2f} dollars & i want to order {} items"
+# print(txt.format(price,order))
+
+
+
+# Index numbers 
+price = 49 
+order = 3
+total_price = price * order
+txt = "The price of each mouse is {0:.1f} dollars & i want to order {1:.2f} items and total price is {2:.2f}"
+print(txt.format(price,order,total_price ))
