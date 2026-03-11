@@ -1084,10 +1084,27 @@ import re
 #     print(content)
     
     
-with open('test.txt','r') as file:
-    print(f'File name:{file.name}')
-    print(f'File mode:{file.mode}')
-    print(f'Is the file closed:{file.closed}')
-    print(f'File endcoding:{file.encoding}')
-file.close()
-print(f'Is the file closed:{file.closed}')
+# with open('C:\SIUT\Java_lessons\s.txt','r') as file:
+#     print(f'File name:{file.name}')
+#     print(f'File mode:{file.mode}')
+#     print(f'Is the file closed:{file.closed}')
+#     print(f'File endcoding:{file.encoding}')
+# file.close()
+# print(f'Is the file closed:{file.closed}')
+
+
+# Creating and storing a data
+name = input("Enter ur name:")
+with open ('test.txt','w') as file:
+    file.write(f'User name: {name}')
+    
+
+
+p = int(input("Enter principle amount:"))
+t = int(input("Enter time:"))
+r = int(input("Enter rate of interest:"))
+with open("test.txt" ,'a') as file:
+    file.write(f'Principal amount: {p}\n')
+    file.write(f'Time period: {t}\n')
+    file.write(f'Rate of interest: {r}\n')
+    file.write(f'Simple interest: {(p*t*r)/100}\n')
