@@ -1108,3 +1108,16 @@ with open("test.txt" ,'a') as file:
     file.write(f'Time period: {t}\n')
     file.write(f'Rate of interest: {r}\n')
     file.write(f'Simple interest: {(p*t*r)/100}\n')
+
+# p = int(input("Enter principle amount:"))
+# t = int(input("Enter time:"))
+# r = int(input("Enter rate of interest:"))
+# with open("test.txt" ,'a') as file:
+#     file.write(f'Principal amount: {p}\n')
+#     file.write(f'Time period: {t}\n')
+#     file.write(f'Rate of interest: {r}\n')
+#     file.write(f'Simple interest: {(p*t*r)/100}\n')
+
+
+
+
