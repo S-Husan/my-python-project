@@ -1123,17 +1123,51 @@ import re
 
 # ///////////////////
 # if foder is empty it will be deleted!
-import os
+# import os
 
 
-if os.rmdir("hi"):
-    print("This was not empty")
-else:
-    print("It was empty")
+# if os.rmdir("hi"):
+#     print("This was not empty")
+# else:
+#     print("It was empty")
     
 # ////////////////////////////
 # NumPy ==> Numerical Python ===
 #                               \\
 #                                 ==> Here we use arreys 
+
+
+# import numpy as np
+# a =np.array((10,20,30))
+
+# print(type(a))
+# print((a))
+
+# ///////////////////
+# Arrays
+# import numpy as np
+# a =np.array((10,20,30)) # < ==== every value is 0-d array  
+# print(type(a))
+
+# One_d array
+# import numpy as np
+# a =np.array((10,20,30)) # < ==== collection of 0-d arrays colled one-d array
+# print(type(a))
+
+
+# 2-D arrays ===> collection of one-d arrays colled 2-d arrys
+# import numpy as np
+# a =np.array([[10,20,30],[40,50,60],[70,80,90]])   # < ==== collection of 0-d arrays colled one-d array
+# print(type(a))
+# print((a))
+
+
+
+# 3-D arrays ===> collection of two-d arrays colled 3-d arrys
+import numpy as np
+a =np.array([[[10,20,30],[40,50,60],[70,80,90]],[[100,110,120],[130,140,150],[160,170,180]]])   # < ==== collection of 2-d arrays colled Three-d array
+print(type(a))
+print((a))
+
 
 
