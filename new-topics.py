@@ -1160,14 +1160,18 @@ import re
 # a =np.array([[10,20,30],[40,50,60],[70,80,90]])   # < ==== collection of 0-d arrays colled one-d array
 # print(type(a))
 # print((a))
+# print(a.ndim)
 
 
 
 # 3-D arrays ===> collection of two-d arrays colled 3-d arrys
+# import numpy as np
+# a =np.array([[[10,20,30],[40,50,60],[70,80,90]],[[100,110,120],[130,140,150],[160,170,180]]])   # < ==== collection of 2-d arrays colled Three-d array
+# print(type(a))
+# print(a.ndim)
+
+
+# ndim show the quantity of dimentions
 import numpy as np
-a =np.array([[[10,20,30],[40,50,60],[70,80,90]],[[100,110,120],[130,140,150],[160,170,180]]])   # < ==== collection of 2-d arrays colled Three-d array
-print(type(a))
-print((a))
-
-
-
+a = np.array(10)
+print(a.ndim)
