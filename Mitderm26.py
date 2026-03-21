@@ -49,17 +49,17 @@
 # ===========================================
 
 # Opject methods
-class Person:
-    def __init__(self,name,age):
-        self.name= name
-        self.age= age
-    def myperson(self):
-        print("My name is " + self.name + ' and i am ' + self.age + ' years old')
-me = Person("Husan","17")
-me.age = "233"           # <=== modefy object properties
+# class Person:
+#     def __init__(self,name,age): # <===== Costructor
+#         self.name= name
+#         self.age= age
+#     def myperson(self):
+#         print("My name is " + self.name + ' and i am ' + self.age + ' years old')
+# me = Person("Husan","17")
+# me.age = "233"           # <=== modefy object properties
 # del me.age               # <=== delete object properties
 # del me                   # <=== delete objects
-me.myperson()
+# me.myperson()
 
 
 # ===========================================
@@ -69,4 +69,29 @@ me.myperson()
 # but if you for some reason have a class definition with no content, 
 # put it in the pass statement to avoid getting an error.
 
-# class Person:
+class Person:
+    pass # <==== we typed here pass that is why there will be no errors
+
+
+# Inheretance
+# Inheritance allows us to define a class that inherits another class’s methods and properties
+# Parent class ===> Base-class or Superclass
+# Child class ===> Derived-class (Inherets from another class)
+
+# A method = function inside a class   < ==== IMOORTANT!
+
+
+# class Person:  # Class (blueprint for objects)
+
+#     def __init__(self, name, age):  # Constructor (runs when object is created)
+#         self.name = name  # Instance variable (stored in object)
+#         self.age = age    # Instance variable
+
+#     def My_student(self):  # Method (function inside class)
+#         print("My student is", self.name, "and he is", self.age, "years old")
+
+# # Creating an object (instance of the class)
+# st1 = Person("Muslim", "16")
+
+# # Calling a method using the object
+# st1.My_student()
