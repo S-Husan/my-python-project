@@ -128,3 +128,53 @@ x = Student("Ali", "Osl")
 x.printname()  
 # Output: Ali Osl
 # Method is defined in Person but used by Student object
+
+# ====================================================== ||
+# ////////////////////////////////////////////////////// ||
+# ====================================================== ||
+
+# class Person:  # Base class (parent class)
+
+#     def __init__(self, fname, lname):  # Constructor (initializes object data)
+#         self.Firstname = fname  # Instance variable (stores first name in object)
+#         self.Lastname = lname   # Instance variable (stores last name in object)
+
+#     def printname(self):  # Method (function inside class)
+#         print(self.Firstname, self.Lastname)  # Accesses and prints object attributes
+
+
+# class Student(Person):  # Derived class (child class) inheriting from Person
+#     def __inti__(self,name,lastn):
+#         Person.__inti__(self,name,lastn)
+
+# # Creating an object of Student class
+# x = Student("Ali", "Osl")  
+# # "Ali" → fname parameter, "Osl" → lname parameter
+# # Student uses Person's constructor (__init__) due to inheritance
+
+# # Calling inherited method
+# x.printname()  
+
+# ====================================================== ||
+# ////////////////////////////////////////////////////// ||
+# ====================================================== ||
+
+
+# class Person:
+#   def __init__(self, fname, lname):
+#     self.firstname = fname
+#     self.lastname = lname
+
+#   def printname(self):
+#     print(self.firstname, self.lastname)
+
+# class Student(Person):
+#   def __init__(self, fname, lname):
+#     super(). __init__(fname, lname) # <=== It calls the constructor of the parent class (Person)
+    
+# x = Student("Mike", "Olsen")
+# x.printname()
+
+# ====================================================== ||
+# ////////////////////////////////////////////////////// ||
+# ====================================================== ||
