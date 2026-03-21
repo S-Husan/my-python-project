@@ -178,3 +178,21 @@ x.printname()
 # ====================================================== ||
 # ////////////////////////////////////////////////////// ||
 # ====================================================== ||
+
+# Add properties
+# class Person:
+#   def __init__(self, fname, lname):
+#     self.firstname = fname
+#     self.lastname = lname
+
+#   def printname(self):
+#     print(self.firstname, self.lastname)
+
+# class Student(Person):
+#   def __init__(self, fname, lname,year):
+#     super(). __init__(fname, lname) # <=== It calls the constructor of the parent class (Person)
+#     self.graduateyear =year
+    
+# x = Student("Mike", "Olsen",'1122')
+# x.printname()
+# print(x.graduateyear)
