@@ -8,18 +8,16 @@
 #     if n == 1:
 #         return 1
 #     else:
-#         return n * fuctorial(n-1)
-    # ===========================================
-    # ===========================================
-    # ===========================================
-    
+#         return n * fuctorial(n-1)    
 # n = int(input("Enter a non-negative integer: "))
 # if n <0:
 #     print("FActorial is not defined for negative number: ")
 # else:
 #     result = fuctorial(n)
 #     print("The factorial of " , n ,"is " , result )
-
+  # ===========================================
+    # ===========================================
+    # ===========================================
 # ===========================================
 # Classes /Objects 
 
@@ -51,13 +49,24 @@
 # ===========================================
 
 # Opject methods
+class Person:
+    def __init__(self,name,age):
+        self.name= name
+        self.age= age
+    def myperson(self):
+        print("My name is " + self.name + ' and i am ' + self.age + ' years old')
+me = Person("Husan","17")
+me.age = "233"           # <=== modefy object properties
+# del me.age               # <=== delete object properties
+# del me                   # <=== delete objects
+me.myperson()
+
+
+# ===========================================
+
+# The pass Statement
+# class definitions cannot be empty, 
+# but if you for some reason have a class definition with no content, 
+# put it in the pass statement to avoid getting an error.
+
 # class Person:
-#     def __init__(self,name,age):
-#         self.name= name
-#         self.age= age
-#     def myperson(self):
-#         print("My name is " + self.name)
-# me = Person("Husan","17")
-# me.myperson()
-
-
