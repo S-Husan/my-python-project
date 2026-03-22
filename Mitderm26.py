@@ -2,7 +2,7 @@
 
 # Recursion
 # Less time
-# Recursion calls itself directly or inderectly until the base problem is solved.
+# Recursion calls itself directly or indirectly until the base problem is solved.
 
 # def fuctorial(n):
 #     if n == 1:
@@ -11,7 +11,7 @@
 #         return n * fuctorial(n-1)    
 # n = int(input("Enter a non-negative integer: "))
 # if n <0:
-#     print("FActorial is not defined for negative number: ")
+#     print("Factorial is not defined for negative number: ")
 # else:
 #     result = fuctorial(n)
 #     print("The factorial of " , n ,"is " , result )
@@ -19,7 +19,7 @@
     # ===========================================
     # ===========================================
 # ===========================================
-# Classes /Objects 
+# Classes / Objects 
 
 # class MyCalss: #  <== MyClass here is class name
     # x = 5 #  <==== 'X' here is property 
@@ -48,15 +48,15 @@
 
 # ===========================================
 
-# Opject methods
+# Object methods
 # class Person:
-#     def __init__(self,name,age): # <===== Costructor
+#     def __init__(self,name,age): # <===== Constructor
 #         self.name= name
 #         self.age= age
-#     def myperson(self):  #< === Methdo the function insede a class
-#         print("My name is " + self.name + ' and i am ' + self.age + ' years old')
+#     def myperson(self):  #< === Method, the function inside a class
+#         print("My name is " + self.name + ' and I am ' + self.age + ' years old')
 # me = Person("Husan","17")
-# me.age = "233"           # <=== modefy object properties
+# me.age = "233"           # <=== modify object properties
 # del me.age               # <=== delete object properties
 # del me                   # <=== delete objects
 # me.myperson()
@@ -67,7 +67,7 @@
 # The pass Statement
 # class definitions cannot be empty, 
 # but if you for some reason have a class definition with no content, 
-# put it in the pass statement to avoid getting an error.
+# put in the pass statement to avoid getting an error.
 
 # class Person:
 #     pass # <==== we typed here pass that is why there will be no errors
@@ -76,12 +76,12 @@
 # ////////////////////////////////////////////////////// ||
 # ====================================================== || 
 
-# Inheretance
+# Inheritance
 # Inheritance allows us to define a class that inherits another class’s methods and properties
-# Parent class ===> Base-class or Superclass
-# Child class ===> Derived-class (Inherets from another class)
+# Parent class ===> Base class or Superclass
+# Child class ===> Derived class (inherits from another class)
 
-# A method = function inside a class   < ==== IMOORTANT!
+# A method = function inside a class   < ==== IMPORTANT!
 
 # ====================================================== ||
 # ////////////////////////////////////////////////////// ||
@@ -89,9 +89,9 @@
 
 # class Person:  # Class (blueprint for objects)
 
-#     def __init__(self, name, age):  # Constructor (runs when object is created) name and age is parameter
+#     def __init__(self, name, age):  # Constructor (runs when object is created) name and age are parameters
 #         self.name = name  # Instance variable (stored in object)
-#         self.age = age    # Instance variablez
+#         self.age = age    # Instance variable
 
 #     def My_student(self):  # Method (function inside class)
 #         print("My student is", self.name, "and he is", self.age, "years old")
@@ -206,7 +206,7 @@
 
 # Iterators
 # Lists, tuples, dictionaries, and sets are all iterable objects ==
-# ===>All these objects have an iter() method for getting an iterator
+# ===> All these objects have an iter() method for getting an iterator
 
 # Iterable → something you can loop over (like a list)
 # Iterator → the thing that goes through it step by step
@@ -284,13 +284,13 @@
 # it refers to methods/functions/operators with the same name that can be executed on 
 # many objects or classes.
 
-#An example of a Python function that can be used on different objects is the len() function.
+# An example of a Python function that can be used on different objects is the len() function.
 
 # For strings, len() returns the number of characters; for tuples,===>
 # ===> len() returns the number of items in the tuple; for dictionaries,===>
 # ==> len() returns the number of key/value pairs in the dictionary.
 
-# Polymorphism is often used in Class methods, where multiple classes can have the same method name.
+# Polymorphism is often used in class methods, where multiple classes can have the same method name.
 
 
 # ====================================================== ||
@@ -303,14 +303,108 @@
 # The variable belongs to the global scope if you use the global keyword.
 
 # x =200
-def myfunc():
-    global x
-    x = 300   #<=== local veriable
-myfunc() # < === calling the local verable
-print(x)
+# def myfunc():
+    # global x
+    # x = 300   #<=== local variable
+# myfunc() # < === calling the local variable
+# print(x)
 # use the global keyword if you want to make a change to a global variable inside a function.
 
 
 # ====================================================== ||
+# ////////////////////////////////////////////////////// ||
+
+# Polymorphism
+# class Car:
+#   def __init__(self, brand, model):
+#     self.brand = brand
+#     self.model = model
+
+#   def move(self):
+#     print("Drive!")
+
+# class Boat:
+#   def __init__(self, brand, model):
+#     self.brand = brand
+#     self.model = model
+
+#   def move(self):
+#     print("Sail!")
+
+# class Plane:
+#   def __init__(self, brand, model):
+#     self.brand = brand
+#     self.model = model
+
+#   def move(self):
+#     print("Fly!")
+
+# car1 = Car("Ford", "Mustang")       # Create a Car object
+# boat1 = Boat("Ibiza", "Touring 20") # Create a Boat object
+# plane1 = Plane("Boeing", "747")     # Create a Plane object
+
+# for x in (car1, boat1, plane1):
+#   x.move()
+
+
+# ====================================================== ||
+# ////////////////////////////////////////////////////// ||
+
+# Inheritance Class Polymorphism
+# idk !!
+
+
+# ////////////////////////////////////////////////////// ||
+# ====================================================== ||
+
+# Scope
+# A variable is only available from inside the region it is created. This is called scope
+
+
+# Local Scope
+# A variable created inside a function belongs to the local scope of that function, 
+# and can only be used inside that function.
+
+# A variable created inside a function is available inside that function.
+# def myfunc():
+#   x = 300
+#   print(x)
+# myfunc()
+
+# =====================================================  ||
+# ////////////////////////////////////////////////////// ||
+# ====================================================== ||
+
+# Function Inside Function
+# The local variable can be accessed from a function within the function.
+
+def myfunc():
+    x = 300  
+    # create a variable x inside this function
+
+    def myinnerfunc():
+        # this is a function inside another function
+
+        print(x)
+        # print x (it takes x from the outer function)
+
+    myinnerfunc()
+    # run the inner function
+
+myfunc()
+# run the main function
+
+# Key idea here
+# 👉 The inner function can access variables from the outer function
+
+# Practice 
+# def main():
+#     x =12
+#     def derived():
+#         print(x)
+#     derived()
+# main()
+
+# =====================================================  ||
 # ////////////////////////////////////////////////////// ||
 # ====================================================== ||
