@@ -211,13 +211,13 @@
 # Iterable → something you can loop over (like a list)
 # Iterator → the thing that goes through it step by step
 
-numbers = [10, 20, 30]
+# numbers = [10, 20, 30]
 
-it = iter(numbers)   # create iterator
+# it = iter(numbers)   # create iterator
 
-print(next(it))  # 10
-print(next(it))  # 20
-print(next(it))  # 30   
+# print(next(it))  # 10
+# print(next(it))  # 20
+# print(next(it))  # 30   
 
 # Real-life example 🍎
 # Imagine you have a box of apples.
@@ -231,3 +231,27 @@ print(next(it))  # 30
 # …until there are no apples left
 # 👉 That “taking one by one” process = iteration
 # 👉 The thing that helps you do it = iterator
+
+
+# Example
+
+# mytuple = ("Apple","banana","cherry")
+# myit = iter(mytuple)
+# print(next(myit))
+# print(next(myit))
+# print(next(myit))
+
+# numbers = (1,2,4,5,6)
+# number = iter(numbers)
+# print(next(number))
+# print(next(number))
+# print(next(number))
+# print(next(number))
+# print(next(number))
+
+
+# /=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/     / ||
+#                                                                  /  ||
+# Even strings are iterable objects and can return an iterator.<===   ||
+#                                                                  \  ||
+# /=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/     \ ||
