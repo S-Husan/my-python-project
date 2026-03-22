@@ -378,20 +378,20 @@
 # Function Inside Function
 # The local variable can be accessed from a function within the function.
 
-def myfunc():
-    x = 300  
+# def myfunc():
+    # x = 300  
     # create a variable x inside this function
 
-    def myinnerfunc():
+    # def myinnerfunc():
         # this is a function inside another function
 
-        print(x)
+        # print(x)
         # print x (it takes x from the outer function)
 
-    myinnerfunc()
+    # myinnerfunc()
     # run the inner function
 
-myfunc()
+# myfunc()
 # run the main function
 
 # Key idea here
@@ -406,5 +406,121 @@ myfunc()
 # main()
 
 # =====================================================  ||
+# ////////////////////////////////////////////////////// ||
+# ====================================================== ||
+
+# Global scope
+# A variable created in the main body of the Python code is a global variable ,
+# and belongs to the global scope.
+
+# Global variables are available from within any scope, global and local.
+
+# A variable created outside of a function is global and can be used by anyone.
+
+# x = 200
+# global variable (everyone can use it)
+
+# def myf():
+    # print(x)
+    # uses x from outside (global)
+
+# myf()
+# calls the function → prints x
+
+# print(x)
+# prints x again from global scope
+
+# /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\
+# x = 200
+# def myf():
+    # x = 100  # new local variable, not global
+# myf()
+# print(x)  
+# Output : still 200
+
+# =======================================================================
+
+# x = 200
+
+# def myf():
+    # global x #<====
+    # x = 100
+
+# myf()
+# print(x)  
+#   Output : 100
+    
+# /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\
+    
+# Naming Variables
+
+# If you operate with the same variable name inside and outside of a function,
+
+# Python will treat them as two separate variables, one available in the global scope ===>
+# (outside the function) and one available in the local scope (inside the function).
+
+# Ex: The function will print the local x, and then the code will print the global x.
+# x = 300
+# def myfunc():
+#   x = 200
+#   print(x)
+# myfunc()
+# print(x)
+# Output: 200
+#         300
+
+# =====================================================  ||
+# ////////////////////////////////////////////////////// ||
+# ====================================================== ||
+
+# Modules 
+# Module = just another Python file
+# ________________________________________________________
+#|Real-life analogy                                       |
+#|                                                        |      
+#|Think like this:                                        |
+#|Your main program = your room                           |
+#|Module = another room with tools                        |
+#|Instead of rewriting tools, you just go and usethem     |
+#|________________________________________________________|
+
+# main.py  ──────► mymodule.py
+#    │                │
+#    │ calls          │ has function
+#    ▼                ▼
+#  greeting()     def greeting()
+
+
+# from modules import a as A  # <== importing module form another file
+# print(A) # <== printing A from another module
+
+# =====================================================  ||
+# ////////////////////////////////////////////////////// ||
+
+# Built-in Modules
+# Import and use the platform module.
+
+# import platform
+# x = platform.system()
+# print(x)
+# //////////////////////////////////////
+# Dir function
+# There is a  dir() built-in function to list all the function names
+# (or variable names) in a module. 
+
+# import platform
+# x =dir(platform)
+# print(x)
+
+# /////////////////////////////////////
+
+# Import From Module
+# You can choose to import only parts from a module, by using the from keyword
+from modules import person1
+print (person1["country"])
+
+# do not use the module name when referring to elements in the module.
+# Example: person1["age"], not mymodule.person1["age"]
+
 # ////////////////////////////////////////////////////// ||
 # ====================================================== ||
