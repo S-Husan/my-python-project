@@ -31,7 +31,7 @@
 
 # class MyCalss: #  <== MyClass here is class name
     # x = 1 #  <==== 'X' here is property 
-# p1 =MyCalss() 
+# p1 =MyCalss()  < === object
 
 # print(p1.x)
 # ===========================================
@@ -53,7 +53,7 @@
 #     def __init__(self,name,age): # <===== Costructor
 #         self.name= name
 #         self.age= age
-#     def myperson(self):
+#     def myperson(self):  #< === Methdo the function insede a class
 #         print("My name is " + self.name + ' and i am ' + self.age + ' years old')
 # me = Person("Husan","17")
 # me.age = "233"           # <=== modefy object properties
@@ -75,6 +75,7 @@
 # ====================================================== ||
 # ////////////////////////////////////////////////////// ||
 # ====================================================== || 
+
 # Inheretance
 # Inheritance allows us to define a class that inherits another class’s methods and properties
 # Parent class ===> Base-class or Superclass
@@ -90,7 +91,7 @@
 
 #     def __init__(self, name, age):  # Constructor (runs when object is created) name and age is parameter
 #         self.name = name  # Instance variable (stored in object)
-#         self.age = age    # Instance variable
+#         self.age = age    # Instance variablez
 
 #     def My_student(self):  # Method (function inside class)
 #         print("My student is", self.name, "and he is", self.age, "years old")
@@ -105,27 +106,27 @@
 # ////////////////////////////////////////////////////// ||
 # ====================================================== ||
 
-class Person:  # Base class (parent class)
+# class Person:  # Base class (parent class)
 
-    def __init__(self, fname, lname):  # Constructor (initializes object data)
-        self.Firstname = fname  # Instance variable (stores first name in object)
-        self.Lastname = lname   # Instance variable (stores last name in object)
+    # def __init__(self, fname, lname):  # Constructor (initializes object data)
+        # self.Firstname = fname  # Instance variable (stores first name in object)
+        # self.Lastname = lname   # Instance variable (stores last name in object)
 
-    def printname(self):  # Method (function inside class)
-        print(self.Firstname, self.Lastname)  # Accesses and prints object attributes
+    # def printname(self):  # Method (function inside class)
+        # print(self.Firstname, self.Lastname)  # Accesses and prints object attributes
 
 
-class Student(Person):  # Derived class (child class) inheriting from Person
-    pass  # No new properties or methods; inherits everything from Person
+# class Student(Person):  # Derived class (child class) inheriting from Person
+    # pass  # No new properties or methods; inherits everything from Person
 
 
 # Creating an object of Student class
-x = Student("Ali", "Osl")  
+# x = Student("Ali", "Osl")  
 # "Ali" → fname parameter, "Osl" → lname parameter
 # Student uses Person's constructor (__init__) due to inheritance
 
 # Calling inherited method
-x.printname()  
+# x.printname()  
 # Output: Ali Osl
 # Method is defined in Person but used by Student object
 
@@ -196,3 +197,37 @@ x.printname()
 # x = Student("Mike", "Olsen",'1122')
 # x.printname()
 # print(x.graduateyear)
+
+
+# ====================================================== ||
+# ////////////////////////////////////////////////////// ||
+# ====================================================== ||
+
+
+# Iterators
+# Lists, tuples, dictionaries, and sets are all iterable objects ==
+# ===>All these objects have an iter() method for getting an iterator
+
+# Iterable → something you can loop over (like a list)
+# Iterator → the thing that goes through it step by step
+
+numbers = [10, 20, 30]
+
+it = iter(numbers)   # create iterator
+
+print(next(it))  # 10
+print(next(it))  # 20
+print(next(it))  # 30   
+
+# Real-life example 🍎
+# Imagine you have a box of apples.
+# The box = a collection (list)
+# Your hand taking apples one by one = an iterator
+# You don’t grab all apples at once.
+# You take:
+# first apple
+# then next
+# then next
+# …until there are no apples left
+# 👉 That “taking one by one” process = iteration
+# 👉 The thing that helps you do it = iterator
