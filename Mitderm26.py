@@ -252,6 +252,65 @@
 
 # /=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/     / ||
 #                                                                  /  ||
+#                                                                  /  ||
+#                                                                  /  ||
+#                                                                  /  ||
 # Even strings are iterable objects and can return an iterator.<===   ||
 #                                                                  \  ||
+#                                                                  \  ||
+#                                                                  \  ||
+#                                                                  \  ||
 # /=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/     \ ||
+
+
+# Strings are also iterable objects, containing a sequence of characters. ==>
+# mystr= "banana"
+# myit = iter(mystr)
+# print(next(myit))
+# print(next(myit))
+# print(next(myit))
+# print(next(myit))
+# print(next(myit))
+# print(next(myit))
+
+
+# ====================================================== ||
+# ////////////////////////////////////////////////////// ||
+# ====================================================== ||
+
+
+# Polymorphism
+# The word "polymorphism" means "many forms” in programming;
+# it refers to methods/functions/operators with the same name that can be executed on 
+# many objects or classes.
+
+#An example of a Python function that can be used on different objects is the len() function.
+
+# For strings, len() returns the number of characters; for tuples,===>
+# ===> len() returns the number of items in the tuple; for dictionaries,===>
+# ==> len() returns the number of key/value pairs in the dictionary.
+
+# Polymorphism is often used in Class methods, where multiple classes can have the same method name.
+
+
+# ====================================================== ||
+# ////////////////////////////////////////////////////// ||
+# ====================================================== ||
+
+# Global Keyword
+# The global keyword makes the variable global
+
+# The variable belongs to the global scope if you use the global keyword.
+
+# x =200
+def myfunc():
+    global x
+    x = 300   #<=== local veriable
+myfunc() # < === calling the local verable
+print(x)
+# use the global keyword if you want to make a change to a global variable inside a function.
+
+
+# ====================================================== ||
+# ////////////////////////////////////////////////////// ||
+# ====================================================== ||
