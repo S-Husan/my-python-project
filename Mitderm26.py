@@ -127,6 +127,7 @@
 
 # Calling inherited method
 # x.printname()  
+
 # Output: Ali Osl
 # Method is defined in Person but used by Student object
 
@@ -304,8 +305,8 @@
 
 # x =200
 # def myfunc():
-    # global x
-    # x = 300   #<=== local variable
+#     global x
+#     x = 300   #<=== local variable
 # myfunc() # < === calling the local variable
 # print(x)
 # use the global keyword if you want to make a change to a global variable inside a function.
@@ -438,13 +439,13 @@
 # print(x)  
 # Output : still 200
 
-# =======================================================================
+# ============================BUT===========================================>
 
 # x = 200
 
 # def myf():
-    # global x #<====
-    # x = 100
+#     global x #<====
+#     x = 100
 
 # myf()
 # print(x)  
@@ -469,7 +470,7 @@
 # Output: 200
 #         300
 
-# =====================================================  ||
+# ====================================================== ||
 # ////////////////////////////////////////////////////// ||
 # ====================================================== ||
 
@@ -516,11 +517,189 @@
 
 # Import From Module
 # You can choose to import only parts from a module, by using the from keyword
-from modules import person1
-print (person1["country"])
+# from modules import person1
+# print (person1["country"])
 
 # do not use the module name when referring to elements in the module.
 # Example: person1["age"], not mymodule.person1["age"]
 
+
 # ////////////////////////////////////////////////////// ||
 # ====================================================== ||
+
+# Datetime
+
+from datetime import datetime
+# x = datetime.datetime.now()
+# print(x)
+# Output like : 2026-03-23 00:42:20.304694
+
+# The date contains Year, Month, Day, Hour, Minute, Second, and Microsecond.
+
+
+# Ex: Return the year and name of weekday
+
+# x = datetime.datetime.now()
+# print(x.year)
+# print(x.strftime("%A"))
+# %A = full day name
+# strftime )==> means ====>“format date/time into a string”
+
+# x = datetime.now()
+# print(x.day)
+# print(x.strftime("%A"))
+
+
+# Visual idea ==>
+# x = 2026-03-23
+
+# x.year      → 2026
+# x.strftime  → "Monday"
+
+
+# ////////////////////////
+# Creating Date Objects
+# To create a date, we can use the datetime() class (constructor) of the datetime module.
+# The datetime() class requires three parameters to create a date: year, month, day.
+# import datetime
+# x= datetime(2020,5,15)
+# print(x)
+
+# ///////////////////////////////
+
+# The strftime() Method
+# The datetime object has a method for formatting date objects into readable strings.
+# The method is called strftime(), and takes one parameter, ===>
+# format, to specify the format of the returned string
+
+# ///////////////////////////
+
+# =============================
+# >>>  Datetime (countunue) <<<
+# =============================
+
+# Display the name of the month.
+
+import datetime
+z = datetime.datetime(2018,6,1)
+print(z.strftime("%B")) # <===%B shows Month
+
+print("=============")
+# %a - Weekday, short version
+w = datetime.datetime.now()
+print(w.strftime("%a"))
+
+print("=============")
+# %A-Weekday, full version
+
+W = datetime.datetime.now()
+print(W.strftime("%A"))
+
+print("=============")
+
+# %w-Weekday as a number 0-6, 0 is Sunday
+
+x = datetime.datetime.now()
+print(x.strftime("%w"))
+
+print("=============")
+
+# %d-Day of month 01-31
+
+x = datetime.datetime.now()
+print(x.strftime("%d"))
+
+print("=============")
+# %b-Month name, short version
+
+x = datetime.datetime.now()
+print(x.strftime("%b"))
+
+print("=============")
+
+# %B-Month name, full version
+x = datetime.datetime.now()
+print(x.strftime("%B"))
+
+print("=============")
+
+# %m-Month as a number 01-12
+x = datetime.datetime.now()
+print(x.strftime("%m"))
+
+print("=============")
+
+# %y-Year, short version, without century
+
+x = datetime.datetime.now()
+print(x.strftime("%y"))
+
+print("=============")
+
+# %Y-Year, full version
+x = datetime.datetime.now()
+print(x.strftime("%Y"))
+
+print("=============")
+
+# %H-Hour 00-23
+
+x = datetime.datetime.now()
+print(x.strftime("%H"))
+
+print("=============")
+# %I-Hour 00-12
+x = datetime.datetime.now()
+print(x.strftime("%I"))
+
+print("=============")
+# %p-AM/PM
+
+
+# //////////////////////////////
+# x = datetime.datetime.now()
+# print(x.strftime("%H") + x.strftime("%p"))
+# /////////////////////////////
+
+print("=============")
+# %M-Minute 00-59
+x = datetime.datetime.now()
+print(x.strftime("%M"))
+
+print("=============")
+    # %S-Second 00-59
+x = datetime.datetime.now()
+print(x.strftime("%S"))
+
+
+print("=============")
+    # %j-Day number of year 001-366
+x = datetime.datetime.now()
+print(x.strftime("%j"))
+
+
+
+# %A-Weekday, full version
+# %a - Weekday, short version
+# %B-Month name, full version
+# %b-Month name, short version
+# %M-Minute 00-59
+# %m-Month as a number 01-12
+# %Y-Year, full version
+# %y-Year, short version, without century
+# %d-Day of month 01-31
+# %w-Weekday as a number 0-6, 0 is Sunday
+# %H-Hour 00-23
+# %I-Hour 00-12
+# %p-AM/PM
+# %S-Second 00-59
+# %j-Day number of year 001-366
+
+
+
+
+# ====================================================== ||
+# //////////////////////>>>  MATH <<<<////////////////// ||
+# ====================================================== ||
+
+
