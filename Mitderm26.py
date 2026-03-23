@@ -361,7 +361,6 @@
 # Scope
 # A variable is only available from inside the region it is created. This is called scope
 
-
 # Local Scope
 # A variable created inside a function belongs to the local scope of that function, 
 # and can only be used inside that function.
@@ -580,79 +579,79 @@ from datetime import datetime
 
 # Display the name of the month.
 
-import datetime
-z = datetime.datetime(2018,6,1)
-print(z.strftime("%B")) # <===%B shows Month
+# import datetime
+# z = datetime.datetime(2018,6,1)
+# print(z.strftime("%B")) # <===%B shows Month
 
-print("=============")
+# print("=============")
 # %a - Weekday, short version
-w = datetime.datetime.now()
-print(w.strftime("%a"))
+# w = datetime.datetime.now()
+# print(w.strftime("%a"))
 
-print("=============")
+# print("=============")
 # %A-Weekday, full version
 
-W = datetime.datetime.now()
-print(W.strftime("%A"))
+# W = datetime.datetime.now()
+# print(W.strftime("%A"))
 
-print("=============")
+# print("=============")
 
 # %w-Weekday as a number 0-6, 0 is Sunday
 
-x = datetime.datetime.now()
-print(x.strftime("%w"))
+# x = datetime.datetime.now()
+# print(x.strftime("%w"))
 
-print("=============")
+# print("=============")
 
 # %d-Day of month 01-31
 
-x = datetime.datetime.now()
-print(x.strftime("%d"))
+# x = datetime.datetime.now()
+# print(x.strftime("%d"))
 
-print("=============")
+# print("=============")
 # %b-Month name, short version
 
-x = datetime.datetime.now()
-print(x.strftime("%b"))
+# x = datetime.datetime.now()
+# print(x.strftime("%b"))
 
-print("=============")
+# print("=============")
 
 # %B-Month name, full version
-x = datetime.datetime.now()
-print(x.strftime("%B"))
+# x = datetime.datetime.now()
+# print(x.strftime("%B"))
 
-print("=============")
+# print("=============")
 
 # %m-Month as a number 01-12
-x = datetime.datetime.now()
-print(x.strftime("%m"))
+# x = datetime.datetime.now()
+# print(x.strftime("%m"))
 
-print("=============")
+# print("=============")
 
 # %y-Year, short version, without century
 
-x = datetime.datetime.now()
-print(x.strftime("%y"))
+# x = datetime.datetime.now()
+# print(x.strftime("%y"))
 
-print("=============")
+# print("=============")
 
 # %Y-Year, full version
-x = datetime.datetime.now()
-print(x.strftime("%Y"))
+# x = datetime.datetime.now()
+# print(x.strftime("%Y"))
 
-print("=============")
+# print("=============")
 
 # %H-Hour 00-23
 
-x = datetime.datetime.now()
-print(x.strftime("%H"))
+# x = datetime.datetime.now()
+# print(x.strftime("%H"))
 
-print("=============")
+# print("=============")
 # %I-Hour 00-12
-x = datetime.datetime.now()
-print(x.strftime("%I"))
+# x = datetime.datetime.now()
+# print(x.strftime("%I"))
 
-print("=============")
+# print("=============")
 # %p-AM/PM
 
 
@@ -661,45 +660,139 @@ print("=============")
 # print(x.strftime("%H") + x.strftime("%p"))
 # /////////////////////////////
 
-print("=============")
+# print("=============")
 # %M-Minute 00-59
-x = datetime.datetime.now()
-print(x.strftime("%M"))
+# x = datetime.datetime.now()
+# print(x.strftime("%M"))
 
-print("=============")
+# print("=============")
     # %S-Second 00-59
-x = datetime.datetime.now()
-print(x.strftime("%S"))
+# x = datetime.datetime.now()
+# print(x.strftime("%S"))
 
 
-print("=============")
+# print("=============")
     # %j-Day number of year 001-366
-x = datetime.datetime.now()
-print(x.strftime("%j"))
+# x = datetime.datetime.now()
+# print(x.strftime("%j"))
 
 
 
-# %A-Weekday, full version
-# %a - Weekday, short version
-# %B-Month name, full version
-# %b-Month name, short version
-# %M-Minute 00-59
-# %m-Month as a number 01-12
-# %Y-Year, full version
-# %y-Year, short version, without century
-# %d-Day of month 01-31
-# %w-Weekday as a number 0-6, 0 is Sunday
-# %H-Hour 00-23
-# %I-Hour 00-12
-# %p-AM/PM
-# %S-Second 00-59
-# %j-Day number of year 001-366
+#1 %A-Weekday, full version ✅
+#2 %a - Weekday, short version ✅
+#3 %B-Month name, full version ✅
+#4 %b-Month name, short version ✅
+#5 %d-Day of month 01-31 ✅
+#6 %M-Minute 00-59 ✅
+#7 %m-Month as a number 01-12✅
+#8 %Y-Year, full version ✅
+#9 %y-Year, short version, without century ✅
+#10 %w-Weekday as a number 0-6, 0 is Sunday ✅
+#11 %H-Hour 00-23 ✅
+#12 %I-Hour 00-12 ✅
+#13 %p-AM/PM ✅
+#14 %S-Second 00-59 ✅
+#15 %j-Day number of year 001-366 ✅
 
-
-
+# mo = datetime.datetime.now()
+# print("Today is " , mo.strftime("%A"), " and this year is " +mo.strftime("%Y"), "so today is " + mo.strftime("%j"), "'s day of a year", "and the time is " + mo.strftime("%H"))
 
 # ====================================================== ||
 # //////////////////////>>>  MATH <<<<////////////////// ||
 # ====================================================== ||
 
 
+# min() and max()  <==> functions can be used to find the lowest or highest value in an iterable.
+
+# x = min(13,4,65,2,45654,7,6,54,2345)  # <<==================
+# y = max(56543,654,3,45,2,45,0.4,76,3,4)   # <<==================
+# print(x)
+# print(y)
+# ////////////////////////////////////////////////////////////////////////////////////////
+
+# The abs() function returns the specified number's absolute (positive) value.
+# x = abs(-10000)  # <<==================
+# print(x)
+
+# ////////////////////////////////////////////////////////////////////////////////////////
+
+
+# The pow(x, y) function returns the value of x to the power of y (x^y).
+
+# Return the value of 4 to the power of 3 (same as 4 * 4 * 4)
+# x = pow(2,3) # <<==================
+# print(x)
+
+# ////////////////////////////////////////////////////////////////////////////////////////
+
+# The Math Module
+import math
+
+# The math.sqrt() method returns the square root of a number.
+# x = math.sqrt(64) # <<==================
+# print(x) 
+
+# ..............................................................................
+
+#Round a number upward to its nearest integer  # <<==================
+# x = math.ceil(1.4) 
+#Round a number downward to its nearest integer # <<==================
+# y = math.floor(1.4)
+# print(x)
+# print(y)
+
+# //////////////////////////////
+
+# The math.pi constant, returns the value of PI (3.14...) # <<==================
+# import math
+# x = math.pi
+
+# print(x)
+
+# ====================================================== ||
+# //////////////////////>>>>  End <<<<////////////////// ||
+# ====================================================== ||
+
+
+# ====================================================== ||
+# //////////////////////>>>  Json <<<<////////////////// ||
+# ====================================================== ||
+
+# JSON (JavaScript Object Notation) 
+# JSON = a way to store and send data
+
+import json
+
+# Convert from JSON to Python
+
+# some JSON:
+# If you have a JSON string, parse it using the json.loads() method.
+
+# x = '{ "name":"John", "age":30, "city":"New York"}'
+# parse x:
+# y = json.loads(x)
+# the result is a Python dictionary:
+# print(y["age"])
+
+
+
+# a = '{"model":"BMW", "year":"1992"}'
+# b = json.loads(a)
+# print("the model of car is ",b["model"])
+
+# /////////////////////////////////////////////////
+# Convert from Python to JSON
+# by using the json.dumps() method.
+
+# a Python object (dict):
+
+# x = {
+#     "name":"Hos",
+#     "age":20,
+#     "xs":"ld"
+# }
+# Converting to json
+# y = json.dumps(x)
+# print(y)
+
+#
