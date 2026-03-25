@@ -925,7 +925,87 @@ import re
 
 # Any character (except newline character)
 #Search for a sequence that starts with "he", followed by two (any) characters, and an "o":
+# import re
+# txt = "hello planet"
+# x = re.findall("he..o", txt)
+# print(x)
+
+# /////////////////////
+# ^ - starts with
+#Check if the string starts with 'hello':
+# import re
+# txt = "hello planet"
+# x = re.findall("^hello", txt)
+# if x:
+#   print("Yes, the string starts with 'hello'")
+# else:
+#   print("No match")
+
+# ///////////////////
+
+# $ -Ends with 
+# #Check if the string ends with 'planet':
+# import re
+# txt = "hello planet"
+# x = re.findall("planet$", txt)
+# if x:
+#   print("Yes, the string ends with 'planet'")
+# else:
+#   print("No match")
+# #Output: Yes, the string ends with 'world’
+
+
+# ///////////////////////
+# #* - Zero or more occurrences
+#Search for a sequence that starts with "he", 
+# followed by 0 or more  (any) characters, and an "o":
+# import re
+# txt = "hello planet"
+# x = re.findall("he.*o", txt)
+# print(x)
+
+
+# ////////////////////
+## + - One or more occurrences
+#Search for a sequence that starts with "he", followed by 1 or more  (any) characters, and an "o":
+# import re
+# txt = "hello planet"
+# x = re.findall("he.+o", txt)
+# print(x)
+# Output: ['hello']
+
+# ///////////////////
+
+# ? - Zero or one occurrences
+#Search for a sequence that starts with "he", followed by 0 or 1  (any) character, and an "o":
 import re
 txt = "hello planet"
-x = re.findall("he..o", txt)
+x = re.findall("he.?o", txt)
 print(x)
+#This time we got no match, because there were not zero, not one, but two characters between "he" and the "o“.
+# Output:[]
+
+# //////////////
+# {} - Exactly the specified number of occurrences
+#Search for a sequence that starts with "he", followed excactly 2 (any) characters, and an "o":
+import re
+txt = "hello planet"
+x = re.findall("he.{2}o", txt)
+print(x)
+# Output:  ['hello’]
+
+
+# /////////////////////
+# | - Either or
+#Check if the string contains either "falls" or "stays":
+import re
+txt = "The rain in Spain falls mainly in the plain!"
+x = re.findall("falls|stays", txt)
+print(x)
+if x:
+  print("Yes, there is at least one match!")
+else:
+  print("No match")
+# Output: ['falls’], Yes, there is at least one match!
+
+# //////////////////////////
