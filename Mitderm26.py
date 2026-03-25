@@ -846,3 +846,86 @@ import json
 # from python to json is dumps
 
 # //////////////////////////////////////
+# You can convert Python objects of the following types, into JSON strings:
+# dict
+# list
+# tuple
+# string
+# int
+# float
+# True
+# False
+# None
+# ///////////////
+
+
+# ====================================================== ||
+# //////////////////////>>>  RegEx <<<<///////////////// ||
+# ====================================================== ||
+
+
+# re is build in package
+
+import re
+# # EX:Search the string to see if it starts with "The" and ends with "Spain“.
+# txt = "The rain in Spain"
+# x = re.search("^The.*Spain$",txt)
+# print(x)
+
+# ////////////////
+# findall() function returns a list containing all matches
+
+# t = "the rain in spain"
+# x = re.findall("ai",t)
+# print(x)
+# //////////////
+# Search() function 
+# If there is more than one match,
+# only the first occurrence of the match will be returned.
+
+# txt ="the rAin in the spain"
+# x = re.search("a",txt,re.IGNORECASE)
+# print(x)
+
+# /////////////
+# Split()
+# The split() function returns a list ,where the 
+# string has been split at each match.
+# txt ="the rAin in the spain"
+# x = re.split("\s",txt)
+# print(x)
+
+# sub()
+# The sub() function replaces the matches with the text of your choice.
+# t = "The rain in spain"
+# x = re.sub("a","A",t)
+# print(t)
+# print(x)
+
+# /////////////////////////////////
+# /\/\/\/\/Metacharacters/\/\/\/\/\
+# /////////////////////////////////
+# Metacharacters are characters with a special meaning
+
+# []
+#Find all lower-case characters alphabetically between "a" and “z":
+# import re
+# txt = "The rain in Spain"
+# x = re.findall("[a-x]", txt)
+# print(x)
+
+# /////////////////////
+#Find all digit characters:
+# import re
+# txt = "That will be 59 dollars"
+# x = re.findall("\d", txt)
+# print(x)
+## Output: ['5', '9’]
+# /////////////////////////
+
+# Any character (except newline character)
+#Search for a sequence that starts with "he", followed by two (any) characters, and an "o":
+import re
+txt = "hello planet"
+x = re.findall("he..o", txt)
+print(x)
