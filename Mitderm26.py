@@ -978,34 +978,92 @@ import re
 
 # ? - Zero or one occurrences
 #Search for a sequence that starts with "he", followed by 0 or 1  (any) character, and an "o":
-import re
-txt = "hello planet"
-x = re.findall("he.?o", txt)
-print(x)
+# import re
+# txt = "hello planet"
+# x = re.findall("he.?o", txt)
+# print(x)
 #This time we got no match, because there were not zero, not one, but two characters between "he" and the "o“.
 # Output:[]
 
 # //////////////
 # {} - Exactly the specified number of occurrences
 #Search for a sequence that starts with "he", followed excactly 2 (any) characters, and an "o":
-import re
-txt = "hello planet"
-x = re.findall("he.{2}o", txt)
-print(x)
+# import re
+# txt = "hello planet"
+# x = re.findall("he.{2}o", txt)
+# print(x)
 # Output:  ['hello’]
 
 
 # /////////////////////
 # | - Either or
 #Check if the string contains either "falls" or "stays":
-import re
-txt = "The rain in Spain falls mainly in the plain!"
-x = re.findall("falls|stays", txt)
-print(x)
-if x:
-  print("Yes, there is at least one match!")
-else:
-  print("No match")
+# import re
+# txt = "The rain in Spain falls mainly in the plain!"
+# x = re.findall("falls|stays", txt)
+# print(x)
+# if x:
+#   print("Yes, there is at least one match!")
+# else:
+#   print("No match")
 # Output: ['falls’], Yes, there is at least one match!
 
 # //////////////////////////
+
+
+# ====================================================== ||
+# ///////////////>>>  Special Sequences <<<<//////////// ||
+# ====================================================== ||
+
+# A special sequence is a \ followed by one of the characters 
+# in the list below and has a special meaning.
+
+
+
+# \A - Returns a match if the specified characters are at 
+# the beginning of the string.
+# import re
+# txt = "The rain in Spain"
+# #Check if the string starts with "The":
+# x = re.findall("\AThe", txt)
+# print(x)
+# if x:
+#   print("Yes, there is a match!")
+# else:
+#   print("No match")
+
+
+# ///////////////////////
+# \b - Returns a match where
+# the specified characters are at the beginning or at the end of a word
+
+# import re
+# txt = "The rain in Spain"
+# #Check if "ain" is present at the beginning of a WORD:
+# x = re.findall(r"\bain", txt)
+# print(x)
+# if x:
+#   print("Yes, there is at least one match!")
+# else:
+#   print("No match")
+# # Output: [],No match
+# import re
+# txt = "The rain in Spain"
+# #Check if "ain" is present at the end of a WORD:
+# x = re.findall(r"ain\b", txt)
+# print(x)
+# if x:
+#   print("Yes, there is at least one match!")
+# else:
+#   print("No match")
+
+# ////////////////////////
+# ////////////////////////////////////////////////////////////////////
+
+# ====================================================== ||
+# ////////////////////>>>  SETS <<<<//////////////////// ||
+# ====================================================== ||
+
+
+# A set is a set of characters inside a pair of square brackets
+# [] with a special meaning:
