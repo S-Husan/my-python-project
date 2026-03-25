@@ -3,7 +3,7 @@
 # Recursion
 # Less time
 # Recursion calls itself directly or indirectly until the base problem is solved.
-
+ 
 # def fuctorial(n):
 #     if n == 1:
 #         return 1
@@ -50,15 +50,17 @@
 
 # Object methods
 # class Person:
-#     def __init__(self,name,age): # <===== Constructor
-#         self.name= name
-#         self.age= age
-#     def myperson(self):  #< === Method, the function inside a class
-#         print("My name is " + self.name + ' and I am ' + self.age + ' years old')
+    # def __init__(self,name,age): # <===== Constructor
+        # self.name= name
+        # self.age= age
+    # def myperson(self):  #< === Method, the function inside a class
+        # print("My name is " + self.name + ' and I am ' + self.age + ' years old')
 # me = Person("Husan","17")
 # me.age = "233"           # <=== modify object properties
 # del me.age               # <=== delete object properties
 # del me                   # <=== delete objects
+# me.name  ="Ali"
+
 # me.myperson()
 
 
@@ -137,24 +139,24 @@
 
 # class Person:  # Base class (parent class)
 
-#     def __init__(self, fname, lname):  # Constructor (initializes object data)
-#         self.Firstname = fname  # Instance variable (stores first name in object)
-#         self.Lastname = lname   # Instance variable (stores last name in object)
+    # def __init__(self, fname, lname):  # Constructor (initializes object data)
+        # self.Firstname = fname  # Instance variable (stores first name in object)
+        # self.Lastname = lname   # Instance variable (stores last name in object)
 
-#     def printname(self):  # Method (function inside class)
-#         print(self.Firstname, self.Lastname)  # Accesses and prints object attributes
+    # def printname(self):  # Method (function inside class)
+        # print(self.Firstname, self.Lastname)  # Accesses and prints object attributes
 
 
 # class Student(Person):  # Derived class (child class) inheriting from Person
-#     def __inti__(self,name,lastn):
-#         Person.__inti__(self,name,lastn)
+    # def __inti__(self,name,lastn):
+        # Person.__inti__(self,name,lastn)
 
-# # Creating an object of Student class
+# Creating an object of Student class
 # x = Student("Ali", "Osl")  
-# # "Ali" → fname parameter, "Osl" → lname parameter
-# # Student uses Person's constructor (__init__) due to inheritance
+# "Ali" → fname parameter, "Osl" → lname parameter
+# Student uses Person's constructor (__init__) due to inheritance
 
-# # Calling inherited method
+# Calling inherited method
 # x.printname()  
 
 # ====================================================== ||
@@ -173,6 +175,8 @@
 # class Student(Person):
 #   def __init__(self, fname, lname):
 #     super(). __init__(fname, lname) # <=== It calls the constructor of the parent class (Person)
+# 👉 super() means:
+# “Go to parent class and use its methods”
     
 # x = Student("Mike", "Olsen")
 # x.printname()
@@ -235,6 +239,16 @@
 
 
 # Example
+# a = "Iterable"
+# b = iter(a)
+# print(next(b))
+# print(next(b))
+# print(next(b))
+# print(next(b))
+# print(next(b))
+# print(next(b))
+# print(next(b))
+# print(next(b))
 
 # mytuple = ("Apple","banana","cherry")
 # myit = iter(mytuple)
@@ -405,6 +419,14 @@
 #     derived()
 # main()
 
+# def main():
+#     x=  999
+#     def mini():
+#         print(x)
+#     mini()
+# main()
+
+
 # =====================================================  ||
 # ////////////////////////////////////////////////////// ||
 # ====================================================== ||
@@ -481,7 +503,7 @@
 #|Think like this:                                        |
 #|Your main program = your room                           |
 #|Module = another room with tools                        |
-#|Instead of rewriting tools, you just go and usethem     |
+#|Instead of rewriting tools, you just go and use them    |
 #|________________________________________________________|
 
 # main.py  ──────► mymodule.py
@@ -537,6 +559,9 @@ from datetime import datetime
 
 
 # Ex: Return the year and name of weekday
+# x = datetime.now()
+# print("This year is ", x.strftime("%Y ") ," and ", " the weekday is " , x.strftime("%A"))
+
 
 # x = datetime.datetime.now()
 # print(x.year)
@@ -732,14 +757,20 @@ import math
 # x = math.sqrt(64) # <<==================
 # print(x) 
 
+# x= math.sqrt(49)
+# print(x)
+
 # ..............................................................................
 
 #Round a number upward to its nearest integer  # <<==================
 # x = math.ceil(1.4) 
+# x= math.ceil(1.1)
 #Round a number downward to its nearest integer # <<==================
-# y = math.floor(1.4)
+# y = math.floor(1.9)
 # print(x)
 # print(y)
+
+
 
 # //////////////////////////////
 
@@ -748,6 +779,11 @@ import math
 # x = math.pi
 
 # print(x)
+
+# sqrt
+# pi
+# ceil
+# floor
 
 # ====================================================== ||
 # //////////////////////>>>>  End <<<<////////////////// ||
@@ -768,13 +804,15 @@ import json
 # some JSON:
 # If you have a JSON string, parse it using the json.loads() method.
 
-# x = '{ "name":"John", "age":30, "city":"New York"}'
+# x = '{ "name":"John", "age":999, "city":"New York"}'
 # parse x:
 # y = json.loads(x)
 # the result is a Python dictionary:
 # print(y["age"])
 
-
+# x = '{ "name":"John", "age":999, "city":"New York"}'
+# y = json.loads(x)
+# print(y["name"])
 
 # a = '{"model":"BMW", "year":"1992"}'
 # b = json.loads(a)
@@ -795,4 +833,16 @@ import json
 # y = json.dumps(x)
 # print(y)
 
-#
+# x = {
+#     "name":"Hos",
+#     "age":20,
+#     "xs":"ld"
+# }
+
+# y = json.dumps(x)
+# print(y)
+
+# from json to python is json.loads
+# from python to json is dumps
+
+# //////////////////////////////////////
