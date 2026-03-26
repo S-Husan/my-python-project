@@ -1067,3 +1067,155 @@ import re
 
 # A set is a set of characters inside a pair of square brackets
 # [] with a special meaning:
+
+
+# ====================================================== ||
+# ////////////////////>>>  PIP  <<<<//////////////////// ||
+# ====================================================== ||
+
+# Try Except
+# In Python, the try-except block is a way to handle errors so your program doesn't crash.
+
+# The try block lets you test a block of code for errors.
+# The except block lets you handle the error.
+# The else block lets you execute code when there is no error.
+# The finally block lets you execute code, regardless of the result of the try and except blocks.
+
+
+#The try block will generate an error, because x is not defined:
+# try:
+#   print(x)
+# except:
+#   print("An exception occurred")
+# Output: An exception occurred
+
+# # //////////////////////
+# try:
+#   print("2" +2)
+# except:
+#   print("Something went wrong")
+# else:
+#   print("Nothing went wrong")
+# /////////////////////
+# try:
+#   print(x)
+# except:
+#   print("Something went wrong")
+# finally:
+#   print("The 'try except' is finished")
+# ///////////////////////////
+
+
+
+# String formating
+
+# You can add parameters inside the curly brackets to specify how to convert the value.
+# price = 49
+# txt = "The price is {:.2f} dollars"
+# print(txt.format(price))
+
+# quantity = 3
+# itemno = 567
+# price = 49
+# myorder = "I want {} pieces of item number {} for {:.2f} dollars."
+# print(myorder.format(quantity, itemno, price))
+
+
+# {:.2f}👉 Means:
+# “Format this number as a float with exactly 2 decimal places”
+# ////////////////////////
+# Index Numbers
+# You can use index numbers (a number inside the curly brackets {0}) to be sure the values are placed in the correct placeholders:
+# quantity = 3
+# itemno = 567
+# price = 49
+# myorder = "I want {0} pieces of item number {1} for {2:.2f} dollars."
+# print(myorder.format(quantity, itemno, price))
+# # Also, if you want to refer to the same value more than once, use the index number:
+# age = 36
+# name = "John"
+# txt = "His name is {1}. {1} is {0} years old."
+# print(txt.format(age, name))
+
+
+# # ////////////////////////////
+# Named Indexes
+# You can also use named indexes by entering a name inside the curly brackets {carname}, 
+# but then you must use names when you pass the parameter values txt.format(carname = "Ford"):
+# myorder = "I have a {carname}, it is a {model}."
+# print(myorder.format(carname = "Ford", model = "Mustang"))
+
+# //////////////////////////////
+# 
+
+
+
+# ====================================================== ||
+# //////////////>>>  File handlining  <<<<////////////// ||
+# ====================================================== ||
+
+# File Modes
+# Complete List of File Modes
+# "r" - Read - Default value. Opens a file for reading; throws an error if the file does not exist.
+# "a" - Append - Opens a file for appending (writes to the end of the file), creates the file if it does not exist.
+# "w" - Write - Opens a file for writing, creates the file if it does not exist.
+# "x" - Create - Creates the specified file, returns an error if the file exists.
+# "t" - Text - Default value. Text mode
+# "b" - Binary - Binary mode (e.g., images)
+# “+” - Read and write mode
+
+# Combinations:
+# 'rb'  - Read binary
+# 'wb'  - Write binary
+# 'ab'  - Append binary
+# 'r+'  - Read and write (no truncate)
+# 'w+'  - Read and write (truncate)
+# 'a+'  - Read and append
+# 'rb+' - Read and write binary
+
+
+
+# ///////////////////////////////////
+
+# # Open()
+# f = open('test.txt')
+# f= open("test.txt", 'r')
+
+# with open('test.txt', 'r') as file:
+#     # Perform operations
+#     content = file.read()
+# File automatically closed after the block
+
+#/////////////////////////////////
+# To write to an existing file, you must add a parameter to the open() function:
+
+# "a" - Append - will append to the end of the file.
+# "w" - Write - will overwrite any existing content.
+# f = open("test.txt", "a")
+# f.write("Now the file has more content!")
+# f.close()
+# f = open("test.txt", "r")
+# print(f.read())
+# f.close()
+ 
+# ////////////////////////////
+# Open the file “test.txt" and overwrite the content.
+# f = open("test.txt", "w")
+# f.write("overwriting the existing file")
+# f.close()
+# f = open("test.txt", "r")
+# print(f.read())
+
+
+# "x" - Create - will create a file, returns an error if the file exist.
+# "a" - Append - will create a file if the specified file does not exist.
+# "w" - Write - will create a file if the specified file does not exist.
+
+
+x =100
+def change():
+    global x
+    x =50
+change()
+print(x)    
+
