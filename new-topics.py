@@ -1205,9 +1205,61 @@ import numpy as np
 # w= np.array([[10,20,30],[40,50,60]])
 # print(w[1,2], w[2,1])
 
-l = np.array([[[1,2],[3,4]],[[5,6],[7,8]]])
+# l = np.array([[[1,2],[3,4]],[[5,6],[7,8]]])
 
 
-print(l[0,1,1])
+# print(l[0,1,1])
 # array, row , column
-print(l[1,1,1])
+# print(l[1,1,1])
+
+
+
+# a=np.array([[1, 2],[3, 4]])
+
+# b=np.array([[5, 6],[7, 8]])
+
+# result = np.zeros((2, 2), dtype=int)
+
+# for i in range(len(a)):
+#     for j in range(len(a[0])):
+#         result[i][j] = a[i][j] + b[i][j]
+
+# print(result)
+
+# for i,j in[(a,b)]:
+#     print(i+j)
+#     break
+
+
+from numpy import random
+# x= random.randint(5)
+# print(x)
+
+
+# 1d array
+# wd = random.randint(26,size=(5))
+# print(wd)
+
+# 2d array
+# wd = random.randint(26,size=(5,3))
+# print(wd)
+
+
+# 
+# wd = random.rand(26)
+# print(wd)
+
+
+# a = random.rand(1,3)*100.00
+# print(a)
+
+
+#Alternative Methods
+# x = random.uniform(0,199,(3,5)) 
+# print(x)
+
+
+# generate random from array
+
+x= random.random((3,5))* 100
+print(x)
