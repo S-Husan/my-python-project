@@ -1175,3 +1175,39 @@ import re
 
 
 # Access array elements
+
+# ////////////////////////////////////////////////////////////////
+#                                                                |
+#                                                                |
+#                                                                |
+# After midterm exams                                            |
+#                                                                |
+#                                                                |
+#                                                                |
+#/////////////////////////////////////////////////////////////////
+
+
+import numpy as np
+# Access array elements
+# a = [10,20,30,40]
+# print(a[1], a[2])
+
+
+# arr =np.array[{1,2,3,4}]
+
+# print(arr[2]+ arr[3])
+
+# a = np.array([[1,2],[3,4]])
+# print(a)
+
+
+
+# w= np.array([[10,20,30],[40,50,60]])
+# print(w[1,2], w[2,1])
+
+l = np.array([[[1,2],[3,4]],[[5,6],[7,8]]])
+
+
+print(l[0,1,1])
+# array, row , column
+print(l[1,1,1])
