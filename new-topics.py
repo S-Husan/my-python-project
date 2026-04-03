@@ -1231,7 +1231,7 @@ import numpy as np
 #     break
 
 
-from numpy import random
+# from numpy import random
 # x= random.randint(5)
 # print(x)
 
@@ -1259,7 +1259,102 @@ from numpy import random
 # print(x)
 
 
+
+
+
+
+
+# NEw topic new day
+
 # generate random from array
 
-x= random.random((3,5))* 100
-print(x)
+# x= random.random((3,5))* 100
+# print(x)
+
+
+
+# from numpy import random
+# a= [1,2,3,4,5]
+# print(random.choice(a))
+
+# X =random.choice([3,4,5,6],size=(3,5))
+# print(X)
+
+import numpy as np
+
+
+# Making zero matrix
+# n1 = np.zeros((2,3))
+# print(n1)
+# Sao12345
+
+
+
+# MATRIX WITH MY DESIRED NUMBER
+# a =np.full((2,3),7)
+# print(a)
+
+
+# Initializing numpy aeeay within
+# a= np.arange(5,10)
+# print(a)
+
+
+
+
+# a= np.arange(100,300,500)
+# print(a)
+
+# 
+
+# 
+from random import random
+# a =np.random.randint(1,10,5)
+
+# print(a)
+
+# np = np.array([[1,2,3,4],[5,6,7,8]])
+# print(np)
+
+# print(np.shape)
+
+# print(np.ndim)
+
+
+
+# np.shape =(4,2)
+# print(np)
+
+
+# Sum two arrays
+# nl = np.array([1,2])
+# na = np.array([3,4])
+# print(nl.sum())
+# print(na.sum())
+
+# print(np.sum([nl,na], axis = 0))
+# print(np.sum([nl,na], axis = 1))
+
+
+# /=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/
+from numpy import vstack
+from numpy import hstack
+nl =   np.array([1,2])
+na =   np.array([3,4])
+na2 =  np.array([5,6])
+np.vstack((nl,na,na2))
+print(np)
+# M = np.vstack((nl,na,na2))
+# print(M)
+n5 = np.hstack((nl,na,na2))
+print(n5)
+
+
+
+# ======================================|
+# ===========>>|NEW TOPIC|<<============|
+# ======================================|
+
+# Column 
+n6= np.column_stack((nl,na,na2))
+print(n6)
