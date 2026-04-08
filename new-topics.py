@@ -1280,7 +1280,7 @@ import numpy as np
 # X =random.choice([3,4,5,6],size=(3,5))
 # print(X)
 
-import numpy as np
+# import numpy as np
 
 
 # Making zero matrix
@@ -1308,7 +1308,7 @@ import numpy as np
 # 
 
 # 
-from random import random
+# from random import random
 # a =np.random.randint(1,10,5)
 
 # print(a)
@@ -1337,24 +1337,78 @@ from random import random
 
 
 # /=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/
-from numpy import vstack
-from numpy import hstack
-nl =   np.array([1,2])
-na =   np.array([3,4])
-na2 =  np.array([5,6])
-np.vstack((nl,na,na2))
-print(np)
+# from numpy import vstack
+# from numpy import hstack
+# nl =   np.array([1,2])
+# # na =   np.array([3,4])
+# na2 =  np.array([5,6])
+# np.vstack((nl,na,na2))
+# print(np)
 # M = np.vstack((nl,na,na2))
 # print(M)
-n5 = np.hstack((nl,na,na2))
-print(n5)
-
-
-
-# ======================================|
-# ===========>>|NEW TOPIC|<<============|
-# ======================================|
-
+# n5 = np.hstack((nl,na,na2))
+# print(n5)
+# 
+# 
+# 
+# 
 # Column 
-n6= np.column_stack((nl,na,na2))
-print(n6)
+# n6= np.column_stack((nl,na,na2))
+# print(n6)
+
+
+# 
+# ======================================|
+# ======>>|Random Distribution|<<=======|
+# ======================================|
+
+# Random data distribution ||||
+
+# from numpy import random
+# x= random.choice([3,5,7,9],p =[0.1,0.2,0.3,0.4], size= 10)
+# print(x)
+
+# Marker Color
+import matplotlib.pyplot as plt
+import numpy as np
+# plt.plot(x,y,ms =20, mec = "red",mfc = "yellow",
+#          ls = "dashed",marker ='3',color= 'green'
+#          ,lw= 2, 
+#          )
+# font1 = {'family':"serif",'color':"blue","size":20}
+# font2 = {'family':"serif",'color':"darkred","size":15}
+# plt.title('age vs years',fontdict=font1,loc = 'left', color = 'purple')
+# plt.xlabel('Age', fontdict =font2)
+# plt.ylabel('Years',fontdict = font2)
+# plt.grid(axis = 'x',color = 'green',linestyle='--')
+
+x = np.array([5,25])
+y = np.array([5,5])
+plt.subplot(1,3,1)
+plt.plot(x,y)
+
+a = np.array([15,25])
+b = np.array([25,50])
+plt.subplot(1,3,2)
+plt.plot(a,b)
+
+e = np.array([15,25])
+f = np.array([25,50])
+plt.subplot(1,3,3)
+plt.plot(e,f)
+
+plt.show()
+
+# 
+
+# a11 = np.array([10,10,0,-10,-10,0,0,-5,-5,0,10])
+# b11 = np.array([40,190,180,160,60,40,50,60,160,170,180])
+# a12 = np.array([-15,25,25,-15,-15])
+# b12 = np.array([30,30,40,40,30])
+# a13 = np.array([0,10,10,0,0])
+# b13 = np.array([0,0,30,30,0])
+
+# plt.plot(a11,b11,color = "grey")
+# plt.plot(a12,b12,color = "black")
+# plt.plot(a13,b13,color = "black")
+# plt.show()
