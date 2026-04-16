@@ -1382,24 +1382,57 @@ import numpy as np
 # plt.ylabel('Years',fontdict = font2)
 # plt.grid(axis = 'x',color = 'green',linestyle='--')
 
-x = np.array([5,25])
-y = np.array([5,5])
-plt.subplot(1,3,1)
-plt.plot(x,y)
+# x = np.array([5,25])
+# y = np.array([5,5])
+# plt.subplot(1,3,1)
+# plt.plot(x,y)
+# plt.title('Line Graph')
 
-a = np.array([15,25])
-b = np.array([25,50])
-plt.subplot(1,3,2)
-plt.plot(a,b)
+# a = np.array([15,25])
+# b = np.array([25,50])
+# plt.subplot(1,3,2)
+# plt.plot(a,b)
+# plt.title('2nd Graph')
 
-e = np.array([15,25])
-f = np.array([25,50])
-plt.subplot(1,3,3)
-plt.plot(e,f)
+# e = np.array([15,25])
+# f = np.array([25,50])
+# plt.subplot(1,3,3)
+# plt.plot(e,f)
+# plt.title('Last Graph')
+# plt.suptitle('This is  mine')
 
-plt.show()
+# x = np.array([1,2,3])
+# y = np.array([8,9,10,11,12,13,14])
+# color = ["red",'blue','green','yellow','cyan','magenta','orange']
+# color = [0,10,20,30,40,50,60]
 
-# 
+# plt.title("Scatter Plot")
+# x = np.random.randint(100, size =(100))
+# y = np.random.randint(100, size =(100))
+# size = 10 * np.random.randint(100,size = (100))
+# x = ["hussein", "Ali", "Omar","Youse"]
+# y = [90,20,60,34]
+# z =np.random.normal(12,34,160)
+# color = ["red",'blue','green','yellow']
+# x2 = np.array([16,22,31,43,55,61,7])
+# y2 = np.array([8,9,10,11,12,13,14])
+# color = ["red",'blue','green','yellow','cyan','magenta','orange']
+# plt.scatter(x2,y2, color = color)
+# plt.scatter(x,y,s = size ,alpha = 0.5, cmap = "nipy_spectral")
+# plt.barh(x,y)
+# plt.bar(x,y, color = color,width = 0.4)
+# plt.hist(x,y, color = color,height  =0.5)
+# l = np.array([8,2,4])
+# ex  = [0.2,0,0]
+# col = ["red","ble","gray","vsd"]
+# plt.pie(x, labels=["a","b","c"], startline =180, explode = ex ,shadow=  True,colors = col)
+# plt.legend(title = "Djdd", loc = "lower left")
+
+
+# plt.pie(y)
+# plt.title("Scatter Plot")
+# plt.hist(z)
+# plt.show()
 
 # a11 = np.array([10,10,0,-10,-10,0,0,-5,-5,0,10])
 # b11 = np.array([40,190,180,160,60,40,50,60,160,170,180])
@@ -1411,4 +1444,95 @@ plt.show()
 # plt.plot(a11,b11,color = "grey")
 # plt.plot(a12,b12,color = "black")
 # plt.plot(a13,b13,color = "black")
+# plt.show(
+    
+# names = ["a", "a", "os", "Extra", "Extra2"]
+# marks =[10,20,30, 25, 90]
+# colors2 = ["red", "green", "blue"]
+# widths = [0.1, 0.2, 1.2]
+# # plt.barh(names, marks, color = colors2, height=widths)
+
+# nums = np.random.normal(170, 10,250)
+# # plt.hist(nums)
+# # plt.show()
+
+# plt.pie(marks, labels=names, startangle=90, counterclock=False, explode=[0.2,1,0.2,0.2,0.2], shadow=True, colors=["gold","brown", "red", "blue", "orange"])
+# plt.legend(loc="lower left", title="Names")
 # plt.show()
+
+
+
+
+# ====================================================== ||
+# ///////////////>>>>> Pandas Module <<<<<////////////// ||
+# ====================================================== ||
+
+# Stracture qeary lenguage , not programming language but datebase language.
+
+# Single - dimensioanl data set
+import pandas as pd
+# a= pd.Series([1,2,3,4,5],index= ['a','b','c','d','e'])
+# print(a)
+# print(type(a))
+# Index | Number |
+# 0     |    1   |
+# 1     |    2   |
+# 2     |    3   |
+# 3     |    4   |
+# 4     |    5   |
+
+# # ///////////////////////////
+# q= pd.Series({"Snomber": "1","Sname" :"galety","Awp":"0"})
+# print(q)
+
+
+# Padnas with two dimantional dataset
+
+# a = pd.DataFrame({"Sno":[1,2,3],
+#                   "Sname":["Husan","Asalya","Husniddin"],
+#                   "Prg":["CS","Al","AI"]})
+# print(a)
+# print(type(a))
+
+
+# Pandas => data manupulations and data analysiz
+# For this => Shape(),describe(), head(), tail();
+# data schould be in exel or .csv , the last one is faster 
+# Comma spareter format
+# a =pd.read_csv('C:\SIUT\Python from scratch\covid\country_wise_latest.csv')
+# print(a)
+# print(type(a))
+# ///////////////////
+
+# df =pd.read_csv('C:\\SIUT\\Python from scratch\\covid\\country_wise_latest.csv')
+# print(df.head())
+# print(df.tail())
+# =============/\/\/\/\/\/|=================>
+df =pd.read_csv('C:\\SIUT\\Python from scratch\\covid\\country_wise_latest.csv')
+# ========================
+# Top 5 records
+# print(df.head())
+
+# Top 10 records
+# print(df.head(10))
+
+# Last 5 records
+# print(df.tail())
+
+# Last 10 records
+# print(df.tail(10))
+# ======================
+# Passing index of the columns == iloc()
+# print(df.iloc[0:3,0:3])
+# ======================
+# Passing index of the columns == loc()
+# print(df.loc[0:3,['Country/Region','Confirmed',"New cases"]])
+
+# ======================
+# Passing the data inside table
+# print(df[df["Country/Region"]=="China"])
+
+# ======================
+# Contitions
+a = df[(df["    " ]> 100) & (df["Country/Region" ]=="Algeria")]
+print(a)
