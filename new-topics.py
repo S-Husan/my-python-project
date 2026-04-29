@@ -1561,13 +1561,19 @@ window.title("AIchard")
 window.geometry("1980x1070")
 
 # Create label  
-label = ttk.Label(
-    window,
-    text="Hello World",
-    font=("Arial", 20)
-)
-
+label = ttk.Label(window,text="Enter your name:",font=("Arial", 20))
 label.pack(pady=50)
 
+
+
+#
+# Create label  
+label = ttk.Label(window,text="Enter your ",font=("Arial", 20))
+label.pack(pady=50)
+
+
+
+
+ 
 # Run application
 window.mainloop()
