@@ -1534,5 +1534,20 @@ df =pd.read_csv('C:\\SIUT\\Python from scratch\\covid\\country_wise_latest.csv')
 
 # ======================
 # Contitions
-a = df[(df["    " ]> 100) & (df["Country/Region" ]=="Algeria")]
-print(a)
+# a = df[(df["    " ]> 100) & (df["Country/Region" ]=="Algeria")]
+# print(a)
+
+
+
+
+# ====================================================== ||
+# ////////////////>>>>>>> Tkiinter <<<<<<<////////////// ||
+# ====================================================== ||
+# 
+# Kivy
+# Python Qt
+# wxPython
+
+import tkinter as tk
+from tkinter import ttk
+# ttk is submodel of tkinter

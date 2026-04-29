@@ -1250,5 +1250,58 @@ import re
 
 
 # ====================================================== ||
-# //////////////////////>>>  MATH <<<<////////////////// ||
+# ///////////////>>>  MATH MODULE <<<<////////////////// ||
 # ====================================================== ||
+
+# Built in MAth Functions
+# The min() and max() functions can be used 
+# to find the lowest or highest value in an iterable.
+
+x= min(3,1,5)
+y = max(2,45,6)
+print("The minimal value is " , x , "And the maximal value is" , y )
+
+# Output:The minimal value is  1 And the maximal value is 45
+
+
+# abs() < == function returns the specified number's absolute positve value
+x= abs(-2.34)
+print(x) 
+# Output:2.34
+
+# pow(x,y) <== Function returns the value of x to the power of y ==> (x^y) 
+# x = > the number |  y = > how much time it will be multiplied 
+x =pow(2,3)
+print(x)
+ 
+ 
+print("MATH MODULE =>")
+#  MATH MODULE 
+import math
+# The math.sqrt() method for example, returns the square root of a number.
+x = math.sqrt(49)
+print(x)
+
+# math.ceil() ==> method rounds a number upwards to its nearest integer.
+
+x = math.ceil(2.3)
+print(x)
+
+# math.floor() ==>method rounds a number downwards to its nearest integer 
+# and returns the result.
+
+y = math.floor(2.3)
+print(y)
+
+
+# The math.pi constant, returns the value of PI (3.14...)
+import math # First 
+x= math.pi
+print(x)
+
+
+# ====================================================== ||
+# ////////////////////>>>>  JSON  <<<<////////////////// ||
+# ====================================================== ||
+
+# 
