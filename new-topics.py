@@ -649,7 +649,7 @@
 
 # we can canvert any data type
 
-import re
+# import re
 
 # RegEx =======> "re" (in code)
 # Regular expressions
@@ -1187,7 +1187,7 @@ import re
 #/////////////////////////////////////////////////////////////////
 
 
-import numpy as np
+# import numpy as np
 # Access array elements
 # a = [10,20,30,40]
 # print(a[1], a[2])
@@ -1369,8 +1369,8 @@ import numpy as np
 # print(x)
 
 # Marker Color
-import matplotlib.pyplot as plt
-import numpy as np
+# import matplotlib.pyplot as plt
+# import numpy as np
 # plt.plot(x,y,ms =20, mec = "red",mfc = "yellow",
 #          ls = "dashed",marker ='3',color= 'green'
 #          ,lw= 2, 
@@ -1470,7 +1470,7 @@ import numpy as np
 # Stracture qeary lenguage , not programming language but datebase language.
 
 # Single - dimensioanl data set
-import pandas as pd
+# import pandas as pd
 # a= pd.Series([1,2,3,4,5],index= ['a','b','c','d','e'])
 # print(a)
 # print(type(a))
@@ -1508,7 +1508,7 @@ import pandas as pd
 # print(df.head())
 # print(df.tail())
 # =============/\/\/\/\/\/|=================>
-df =pd.read_csv('C:\\SIUT\\Python from scratch\\covid\\country_wise_latest.csv')
+# df =pd.read_csv('C:\\SIUT\\Python from scratch\\covid\\country_wise_latest.csv')
 # ========================
 # Top 5 records
 # print(df.head())
@@ -1550,4 +1550,24 @@ df =pd.read_csv('C:\\SIUT\\Python from scratch\\covid\\country_wise_latest.csv')
 
 import tkinter as tk
 from tkinter import ttk
-# ttk is submodel of tkinter
+
+# Creating a window
+window = tk.Tk()
+
+# Title
+window.title("AIchard")
+
+# Size
+window.geometry("1980x1070")
+
+# Create label  
+label = ttk.Label(
+    window,
+    text="Hello World",
+    font=("Arial", 20)
+)
+
+label.pack(pady=50)
+
+# Run application
+window.mainloop()
