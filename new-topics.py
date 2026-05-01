@@ -1550,7 +1550,7 @@
 import tkinter as tk
 from tkinter import ttk
 
-# Creating a window
+# Creating window
 window = tk.Tk()
 
 # Title
@@ -1559,32 +1559,42 @@ window.title("AIchard")
 # Size
 window.geometry("1980x1080")
 
+# ---------------- USERNAME ----------------
+
 # Username label
-label = ttk.Label(
+username_label = ttk.Label(
     window,
-    text="Enter your UserName:",
+    text="Enter your Username:",
     font=("Arial", 20)
 )
-label.pack(pady=50)
+username_label.pack(pady=10)
+
+# Username input
+username_entry = ttk.Entry(
+    window,
+    font=("Arial", 14),
+    width=30
+)
+username_entry.pack(pady=10)
+
+# ---------------- PASSWORD ----------------
 
 # Password label
-label = ttk.Label(
+password_label = ttk.Label(
     window,
     text="Enter your Password:",
     font=("Arial", 20)
 )
-label.pack(pady=50)
+password_label.pack(pady=10)
 
-# Input frame
-input_frame = ttk.Frame(window)
-input_frame.pack(pady=50)
-
-# Entry widget
-username_entry = ttk.Entry(
-    input_frame,
-    font=("Arial", 12)
+# Password input
+password_entry = ttk.Entry(
+    window,
+    font=("Arial", 14),
+    width=30,
+    show="*"   # hides password
 )
-username_entry.pack()
+password_entry.pack(pady=10)
 
 # Run application
 window.mainloop()
