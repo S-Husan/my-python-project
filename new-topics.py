@@ -1547,7 +1547,6 @@
 # Kivy
 # Python Qt
 # wxPython
-
 import tkinter as tk
 from tkinter import ttk
 
@@ -1558,22 +1557,34 @@ window = tk.Tk()
 window.title("AIchard")
 
 # Size
-window.geometry("1980x1070")
+window.geometry("1980x1080")
 
-# Create label  
-label = ttk.Label(window,text="Enter your name:",font=("Arial", 20))
+# Username label
+label = ttk.Label(
+    window,
+    text="Enter your UserName:",
+    font=("Arial", 20)
+)
 label.pack(pady=50)
 
-
-
-#
-# Create label  
-label = ttk.Label(window,text="Enter your ",font=("Arial", 20))
+# Password label
+label = ttk.Label(
+    window,
+    text="Enter your Password:",
+    font=("Arial", 20)
+)
 label.pack(pady=50)
 
+# Input frame
+input_frame = ttk.Frame(window)
+input_frame.pack(pady=50)
 
+# Entry widget
+username_entry = ttk.Entry(
+    input_frame,
+    font=("Arial", 12)
+)
+username_entry.pack()
 
-
- 
 # Run application
 window.mainloop()
