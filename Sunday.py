@@ -1,673 +1,676 @@
-# Revision
-# Here we go again
+# # Revision
+# # Here we go again
 
-# MODULE I
+# # MODULE I
 
-# x = 1 # Int
-# y = 2.3 # Float
-# z = 2j # Complex
+# # x = 1 # Int
+# # y = 2.3 # Float
+# # z = 2j # Complex
 
-# Type function (We use this to verify the type of opject)
+# # Type function (We use this to verify the type of opject)
 
-# print(type(x)) int
-# print(type(y)) float
-# print(type(z)) complex
+# # print(type(x)) int
+# # print(type(y)) float
+# # print(type(z)) complex
 
-# Random function 
-# import random
-# print(random.randrange(1,20))
+# # Random function 
+# # import random
+# # print(random.randrange(1,20))
 
-# import random
-# print(random.randrange(1,30))
+# # import random
+# # print(random.randrange(1,30))
 
-# Strings are Arrays 
-# A single charcter is simply a string with a length of 1
-# a = "Hello world"
-# print(a[0:2])
+# # Strings are Arrays 
+# # A single charcter is simply a string with a length of 1
+# # a = "Hello world"
+# # print(a[0:2])
 
-# Looping through a String 
-# Since string are arrays, we can loop through the characters in a 
-# string with a "FOR" loop.
+# # Looping through a String 
+# # Since string are arrays, we can loop through the characters in a 
+# # string with a "FOR" loop.
 
-# for x in "Salom":
-#     print(x)
-# for i in "Holla":
-#     print(i)
+# # for x in "Salom":
+# #     print(x)
+# # for i in "Holla":
+# #     print(i)
 
-# String Length 
-# len() function 
-# a = "I am from Samarkand"
-# print(len(a))
+# # String Length 
+# # len() function 
+# # a = "I am from Samarkand"
+# # print(len(a))
 
-# to Check string we use "IN"
-# a = "I am from Samarkand"
-# if 'Samarkand' in a:
-#     print("Yes it is")
+# # to Check string we use "IN"
+# # a = "I am from Samarkand"
+# # if 'Samarkand' in a:
+# #     print("Yes it is")
     
-# Check if NOT
-# a = "I am from Samarkand"
-# print("from" not in a) 
+# # Check if NOT
+# # a = "I am from Samarkand"
+# # print("from" not in a) 
 
-# Slicing 
-# you can return a range of characters by using the slice syntax.
-# b = "hello now"
-# print(b[0:4],b[6:8])
+# # Slicing 
+# # you can return a range of characters by using the slice syntax.
+# # b = "hello now"
+# # print(b[0:4],b[6:8])
 
-# Important TOPICS !!!
-# Modefy Strings 
+# # Important TOPICS !!!
+# # Modefy Strings 
 
-# 1 Upper() returns the string in upper case
-# a = "Salom"
-# print(a.upper())
-# b ='Hleoo'
-# print(b.upper())
+# # 1 Upper() returns the string in upper case
+# # a = "Salom"
+# # print(a.upper())
+# # b ='Hleoo'
+# # print(b.upper())
 
-# 2 Lower() returns the string in lowercase
-# a = "HAYIR"
-# print(a.lower())
+# # 2 Lower() returns the string in lowercase
+# # a = "HAYIR"
+# # print(a.lower())
 
-# Remove whitespace
-# 3 Strip() method removes any space from beginning or at the end
-# a = " skak ee "
-# print(a.strip())
-# a = ' SALOe '
-# print(a.strip())
+# # Remove whitespace
+# # 3 Strip() method removes any space from beginning or at the end
+# # a = " skak ee "
+# # print(a.strip())
+# # a = ' SALOe '
+# # print(a.strip())
 
-# Replace String 
-# 4 Replace() replaces string with another one
-# a = "Hell aplla"
-# print(a.replace("l","Bo"))
-# print(a.replace('l','2'))
-# # print(a.replace('a','C'))
-# a = "Hela"
-# print(a.replace('H','L'))
+# # Replace String 
+# # 4 Replace() replaces string with another one
+# # a = "Hell aplla"
+# # print(a.replace("l","Bo"))
+# # print(a.replace('l','2'))
+# # # print(a.replace('a','C'))
+# # a = "Hela"
+# # print(a.replace('H','L'))
 
-# Split string
-# 5 Split()
-# a = "Salom world"
-# b = a.split(",")
-# print(b)
+# # Split string
+# # 5 Split()
+# # a = "Salom world"
+# # b = a.split(",")
+# # print(b)
 
-# String Concatination 
-# a = "hello, "
-# b = "Word"
-# c = a + b 
-# print(c)
+# # String Concatination 
+# # a = "hello, "
+# # b = "Word"
+# # c = a + b 
+# # print(c)
 
-# String Format
-# We can mix string and numbers by using format() method!
-# 6 format()
-# age = 17 
-# Major = "CS" 
-# txt = "Hi my name is husan and my age is {}, and i study at university and my major is {}"
-# print(txt.format(age,Major))
+# # String Format
+# # We can mix string and numbers by using format() method!
+# # 6 format()
+# # age = 17 
+# # Major = "CS" 
+# # txt = "Hi my name is husan and my age is {}, and i study at university and my major is {}"
+# # print(txt.format(age,Major))
 
-# age = 12
-# school= 1
-# txt = "hi my age is {} ,a and i study at {}, school"
-# print(txt.format(age,school))
+# # age = 12
+# # school= 1
+# # txt = "hi my age is {} ,a and i study at {}, school"
+# # print(txt.format(age,school))
 
-# age = 1
-# name = "Kirigaya"
-# t = "hi i am {}, and my name is {}"
-# print(t.format(age,name))
-
-
+# # age = 1
+# # name = "Kirigaya"
+# # t = "hi i am {}, and my name is {}"
+# # print(t.format(age,name))
 
 
-# Module 2
-# NEW TOPICS 
-
-# 1 Copitalize()
-# ml = "salom bu dunyo"
-# print(ml.capitalize())
-
-#  2 Casefold()
-# ml = "SaloM Bu dUnyo"
-# print(ml.casefold())
 
 
-# 3 Center , move's elemet to center by using numbers 
-# txt = 'THIS IS THE CENTER'
-# a = txt.center(167)
-# print(a)
+# # Module 2
+# # NEW TOPICS 
 
-# Count
-# txt = ' i like red apple, green apple, and yellow apple'
-# print(txt.count("apple"))
-# print(txt.count("i"))
+# # 1 Copitalize()
+# # ml = "salom bu dunyo"
+# # print(ml.capitalize())
 
-
-# BOOLEANS (True or False)
-# print(10 < 9)   /False
-# print(10 == 9)  /False
-# print(10 > 9)   /True
-
-# Example for this booleans
-# a = 1
-# b = 2
-# if b > a:
-#     print(True)
-# else:
-#     print(False)
-
-# Function can return a boolean 
-# def My_f():
-#     return False
-# print(My_f())
+# #  2 Casefold()
+# # ml = "SaloM Bu dUnyo"
+# # print(ml.casefold())
 
 
-# MODULE 3 
+# # 3 Center , move's elemet to center by using numbers 
+# # txt = 'THIS IS THE CENTER'
+# # a = txt.center(167)
+# # print(a)
 
-# Build in functions ---> isinstance()
+# # Count
+# # txt = ' i like red apple, green apple, and yellow apple'
+# # print(txt.count("apple"))
+# # print(txt.count("i"))
 
-# x = 200
-# print(isinstance(x,complex))
-# print(isinstance(x,float))
-# print(isinstance(x,int))
 
-# NEW topic
-# LIST items => Ordered , Changable (Mutable) ,Allow Dublications
-# x = ["Apple","juce","cola"]
-# print(x)
+# # BOOLEANS (True or False)
+# # print(10 < 9)   /False
+# # print(10 == 9)  /False
+# # print(10 > 9)   /True
 
-# Acces items in list becase they are indexed 
-# x = ["Apple","juce","cola"]
-# print(x[1])
-# print(x[1-2])
-# Using range of indexes in list 
-# x = ["Apple","juce","cola"]
-# print(x[0:2]) 
+# # Example for this booleans
+# # a = 1
+# # b = 2
+# # if b > a:
+# #     print(True)
+# # else:
+# #     print(False)
 
-# Check if item exist 
-# x = 'apple,banan ,cherry,pottaod'
-# if "apple" in x:
-#     print(True)
+# # Function can return a boolean 
+# # def My_f():
+# #     return False
+# # print(My_f())
+
+
+# # MODULE 3 
+
+# # Build in functions ---> isinstance()
+
+# # x = 200
+# # print(isinstance(x,complex))
+# # print(isinstance(x,float))
+# # print(isinstance(x,int))
+
+# # NEW topic
+# # LIST items => Ordered , Changable (Mutable) ,Allow Dublications
+# # x = ["Apple","juce","cola"]
+# # print(x)
+
+# # Acces items in list becase they are indexed 
+# # x = ["Apple","juce","cola"]
+# # print(x[1])
+# # print(x[1-2])
+# # Using range of indexes in list 
+# # x = ["Apple","juce","cola"]
+# # print(x[0:2]) 
+
+# # Check if item exist 
+# # x = 'apple,banan ,cherry,pottaod'
+# # if "apple" in x:
+# #     print(True)
     
     
-# MODULE 4
+# # MODULE 4
 
-# Change the item value 
-# c = [1,2,3,4]
-# c[0]= 'First'
-# print(c)
-# ...................
-# b =[2,3,4,5,8]
-# b[2] = 'ASD'
-# print(b)
-
-
-#Change a range of item values 
-# x = ['apple','banan','cherry']
-# x[2:3] = ['a','b']
-# x[0:2] = ["LAP","pal"]
-# print(x)
-
-# If you insert more items than you replace,-
-# -the new items will be inserted where you specified,-
-# -and the remaining items will move accordingly.
-
-# p = ['a','s','f']
-# p[0:2]= ['x','v','t','y']
-# print(p)
-
-# insert Items
-# insert() method insertd an item at the specified index-
-# ,and it doesn't replace any existing values in the list.
-# x = ['apple','banan','cherry']
-# x.insert(2,"Chocotela")
-# print(x)
-
-# x = [12,3,4,5]
-# x.insert(1,"second is here")
-# print(x)
-
-# Append()
-# To add an item to the end of the list, use the append() method.
-# x = ['apple','banan','cherry']
-# x.append("JUSEEE")
-# print(x)
+# # Change the item value 
+# # c = [1,2,3,4]
+# # c[0]= 'First'
+# # print(c)
+# # ...................
+# # b =[2,3,4,5,8]
+# # b[2] = 'ASD'
+# # print(b)
 
 
-# extend 
-# To uppend elements from another list to the current list,-
-# use the extend() method.
+# #Change a range of item values 
+# # x = ['apple','banan','cherry']
+# # x[2:3] = ['a','b']
+# # x[0:2] = ["LAP","pal"]
+# # print(x)
+
+# # If you insert more items than you replace,-
+# # -the new items will be inserted where you specified,-
+# # -and the remaining items will move accordingly.
+
+# # p = ['a','s','f']
+# # p[0:2]= ['x','v','t','y']
+# # print(p)
+
+# # insert Items
+# # insert() method insertd an item at the specified index-
+# # ,and it doesn't replace any existing values in the list.
+# # x = ['apple','banan','cherry']
+# # x.insert(2,"Chocotela")
+# # print(x)
+
+# # x = [12,3,4,5]
+# # x.insert(1,"second is here")
+# # print(x)
+
+# # Append()
+# # To add an item to the end of the list, use the append() method.
+# # x = ['apple','banan','cherry']
+# # x.append("JUSEEE")
+# # print(x)
+
+
+# # extend 
+# # To uppend elements from another list to the current list,-
+# # use the extend() method.
  
-# old = [1,2,3]
-# new = [4,5,6]
-# old.extend(new)
-# print(old) 
+# # old = [1,2,3]
+# # new = [4,5,6]
+# # old.extend(new)
+# # print(old) 
 
-# old = [1,2,3]
-# new = [4,5,6]
-# old.append(new)
-# print(old)
-
-
-# new.append(old)
-# print(new)
-
-# Add any iterable
-# The extend() method does not have to append() lists;
-
-# Remove Specified items
-# remove()
-# x= ['app','coll','pull']
-# x.remove("app")
-# print(x)
-# x.remove("coll")
-# print(x)
+# # old = [1,2,3]
+# # new = [4,5,6]
+# # old.append(new)
+# # print(old)
 
 
-# Remove Specified Index  
-# x= ['app','coll','pull']
-# x.pop(0)
-# print(x)  
+# # new.append(old)
+# # print(new)
+
+# # Add any iterable
+# # The extend() method does not have to append() lists;
+
+# # Remove Specified items
+# # remove()
+# # x= ['app','coll','pull']
+# # x.remove("app")
+# # print(x)
+# # x.remove("coll")
+# # print(x)
 
 
-# If you don't spesify the index, the pop() method removes the last item.
-# x = [1,23,4,5,6,7]
-# x.pop()
-# print(x)
+# # Remove Specified Index  
+# # x= ['app','coll','pull']
+# # x.pop(0)
+# # print(x)  
 
-# del also removes the specified index.
-# z = [12,5,6,4,2,5,4]
-# del z[0]
-# print(z)
-# del z[2]
-# print(z)
 
-# Clear() method empties the list 
-# The list remains, but without content
-# z = [12,5,6,4,2,5,4]
-# z.clear()
-# print(z)
+# # If you don't spesify the index, the pop() method removes the last item.
+# # x = [1,23,4,5,6,7]
+# # x.pop()
+# # print(x)
 
-# LOOPS in LIST
-# y = [1,3,4]
-# for i in y:
-#     print(i)
+# # del also removes the specified index.
+# # z = [12,5,6,4,2,5,4]
+# # del z[0]
+# # print(z)
+# # del z[2]
+# # print(z)
+
+# # Clear() method empties the list 
+# # The list remains, but without content
+# # z = [12,5,6,4,2,5,4]
+# # z.clear()
+# # print(z)
+
+# # LOOPS in LIST
+# # y = [1,3,4]
+# # for i in y:
+# #     print(i)
     
-# Loop through the index number
-# x = ['apple','orange','banana','cherry']
-# for i in range(len(x)):
-#     print(x[i])
+# # Loop through the index number
+# # x = ['apple','orange','banana','cherry']
+# # for i in range(len(x)):
+# #     print(x[i])
 
-# num = [1,2,3,4,5]
-# for i in range(len(num)):
-#     print(num[i])
+# # num = [1,2,3,4,5]
+# # for i in range(len(num)):
+# #     print(num[i])
 
-# Revision just for me 
-# loop throgh the list with for 
-# x  = [1,2,4,5,3]
-# for i in x:
-#     print(i)
-# LOOP throuh the list by using index number
-# x  = [1,2,3,4,5,330]
-# for i in range(len(x)):
-#     print(x[i])
+# # Revision just for me 
+# # loop throgh the list with for 
+# # x  = [1,2,4,5,3]
+# # for i in x:
+# #     print(i)
+# # LOOP throuh the list by using index number
+# # x  = [1,2,3,4,5,330]
+# # for i in range(len(x)):
+# #     print(x[i])
 
-# MODULE 5
-# Using while loop 
-# ROOLS ===>
-# ===>  You can loop through the list items by using a while loop.
-# ===>  Use the len() function to determine the list length, 
-# ===>  then start at 0 and loop your way through the list items 
-# ===>  by referring to their indexes.
-# ===>  Remember to increase the index by 1 after each iteration.
+# # MODULE 5
+# # Using while loop 
+# # ROOLS ===>
+# # ===>  You can loop through the list items by using a while loop.
+# # ===>  Use the len() function to determine the list length, 
+# # ===>  then start at 0 and loop your way through the list items 
+# # ===>  by referring to their indexes.
+# # ===>  Remember to increase the index by 1 after each iteration.
 
-# x = ['apple','bnan','cherry']
-# i = 0
-# while i < len(x):
-#     print(x[i])
-#     i= i + 1
-
-
-# x = ['apple','bnan','cherry']
-# i = 0
-# while i < len(x):
-#     print(x[i])
-#     i = i +1
+# # x = ['apple','bnan','cherry']
+# # i = 0
+# # while i < len(x):
+# #     print(x[i])
+# #     i= i + 1
 
 
-# i = 0
-# while i  < len(x):
-#     print(x[i])
-#     i=+i
+# # x = ['apple','bnan','cherry']
+# # i = 0
+# # while i < len(x):
+# #     print(x[i])
+# #     i = i +1
+
+
+# # i = 0
+# # while i  < len(x):
+# #     print(x[i])
+# #     i=+i
     
-# Looping Using List Comprehension
-# List Comprehension offers the shortest syntax for looping through lists.
-# A shorthand for loop that will print all items in a list.
-# x = ["apple", "banana", "cherry"]
-# # [print(i) for i in y]
+# # Looping Using List Comprehension
+# # List Comprehension offers the shortest syntax for looping through lists.
+# # A shorthand for loop that will print all items in a list.
+# # x = ["apple", "banana", "cherry"]
+# # # [print(i) for i in y]
 
-# [print(i) for i in x ]
-# Revision
-# y= ["apple", "banana", "cherry"]
-# [print(x) for x in y]
+# # [print(i) for i in x ]
+# # Revision
+# # y= ["apple", "banana", "cherry"]
+# # [print(x) for x in y]
 
-# y= ["apple", "banana", "cherry"]
-# n = []
-# for i in y:
-#     if 'a' in i:
-#         n.append(i)
-# print(n)
+# # y= ["apple", "banana", "cherry"]
+# # n = []
+# # for i in y:
+# #     if 'a' in i:
+# #         n.append(i)
+# # print(n)
 
-# num = [1,2,3,411,331,'q']
-# n = []
-# for i in num:
-#     if "q" in num:
-#         n.append(i)
-# print(n)
+# # num = [1,2,3,411,331,'q']
+# # n = []
+# # for i in num:
+# #     if "q" in num:
+# #         n.append(i)
+# # print(n)
 
-# Prictise
-# for i in range(1, 21):
-#     if i == 15:
-#         print(f"{i}: You should stop here")
-#         break
-#     print(f"{i}: Going right")
-#
-
-
+# # Prictise
+# # for i in range(1, 21):
+# #     if i == 15:
+# #         print(f"{i}: You should stop here")
+# #         break
+# #     print(f"{i}: Going right")
+# #
 
 
-# NEW TOPIC 
-
-# # Iterable
-# y = [x for x in range(10)]
-# print(y) 
-
-#Simple version =====>
-
-# y = []
-# for x in range(10):
-#     y.append(x)
-# print(y)
 
 
-# Expression
-# fr = ['app','sks','dd','wkd']
-# newlist = [x.upper() for x in fr]
-# print(newlist)
-# Simple version =====>
-# fr = ['app', 'sks', 'dd', 'wkd']
-# newlist = []          # empty list
-# for x in fr:          # take each word from fr
-#     newlist.append(x.upper())  # make it uppercase and add to newlist
-# print(newlist)
+# # NEW TOPIC 
 
-# f = ['111','222']
-# na = []
-# for x in f:
-#     na.append(x.lower())
-# print(na)
+# # # Iterable
+# # y = [x for x in range(10)]
+# # print(y) 
+
+# #Simple version =====>
+
+# # y = []
+# # for x in range(10):
+# #     y.append(x)
+# # print(y)
 
 
-# Sort lists Alphanumerically
-# x = ["d",'a','w','r','f','g','q' ]
-# x.sort()
-# print(x)
+# # Expression
+# # fr = ['app','sks','dd','wkd']
+# # newlist = [x.upper() for x in fr]
+# # print(newlist)
+# # Simple version =====>
+# # fr = ['app', 'sks', 'dd', 'wkd']
+# # newlist = []          # empty list
+# # for x in fr:          # take each word from fr
+# #     newlist.append(x.upper())  # make it uppercase and add to newlist
+# # print(newlist)
 
-# sort() numerically
-# x = [103,5,7,2,1,8,9,6]
-# x.sort()
-# print(x)
-
-# reverse = True )=> to sort reversed sort()
-# z = [2,5,6,7,3]
-# z.sort(reverse= True)
-# print(z)
+# # f = ['111','222']
+# # na = []
+# # for x in f:
+# #     na.append(x.lower())
+# # print(na)
 
 
-# Case insensitive sort
-# By default the sort() is case_sensitive, sorting all capital letters before lowercase letters.
-# x = ['APplE','skd','cucumber','pineapple']
-# x.sort()
-# print(x)
+# # Sort lists Alphanumerically
+# # x = ["d",'a','w','r','f','g','q' ]
+# # x.sort()
+# # print(x)
 
-# Case-insensitive sort function we use this 
-# x = ['APplE','skd','cucumber','pineapple']
-# x.sort(reverse = True)
-# print(x)
+# # sort() numerically
+# # x = [103,5,7,2,1,8,9,6]
+# # x.sort()
+# # print(x)
 
-# Reverse order
-# The reverse() method reverses the current sorting order of the elements.
-# x = ['banan','cucumber','potato','sosages']
-# x.reverse()
-# print(x)
+# # reverse = True )=> to sort reversed sort()
+# # z = [2,5,6,7,3]
+# # z.sort(reverse= True)
+# # print(z)
 
-# Copy a list 
-# we use Copy() method
-# x = [1,3,4]
-# new = x.copy()
-# print(new)
 
-# Another way to make a copy is using list()
-# x = [1,23,4]
-# z = list(x)
-# print(z)
+# # Case insensitive sort
+# # By default the sort() is case_sensitive, sorting all capital letters before lowercase letters.
+# # x = ['APplE','skd','cucumber','pineapple']
+# # x.sort()
+# # print(x)
 
-# x = [35,6,6543,56,3]
-# z = list(x)
-# print(z)
+# # Case-insensitive sort function we use this 
+# # x = ['APplE','skd','cucumber','pineapple']
+# # x.sort(reverse = True)
+# # print(x)
 
-# Join two lists by using + operator
-# x = ['a','b','c','d']
-# y = [1,2,4]
-# z = x + y
-# print(z)
+# # Reverse order
+# # The reverse() method reverses the current sorting order of the elements.
+# # x = ['banan','cucumber','potato','sosages']
+# # x.reverse()
+# # print(x)
 
-# Another way to join two lists is by appending all the items from list2 into list1, one by one
-# a = [12]
-# b = [13,4,5]
-# for i in b:
-#     a.append(i)
+# # Copy a list 
+# # we use Copy() method
+# # x = [1,3,4]
+# # new = x.copy()
+# # print(new)
+
+# # Another way to make a copy is using list()
+# # x = [1,23,4]
+# # z = list(x)
+# # print(z)
+
+# # x = [35,6,6543,56,3]
+# # z = list(x)
+# # print(z)
+
+# # Join two lists by using + operator
+# # x = ['a','b','c','d']
+# # y = [1,2,4]
+# # z = x + y
+# # print(z)
+
+# # Another way to join two lists is by appending all the items from list2 into list1, one by one
+# # a = [12]
+# # b = [13,4,5]
+# # for i in b:
+# #     a.append(i)
     
-#     # “Put value at the end of list a.”
-#     # “Take the current number stored in i and put it into list a.”
-# print(a)        
+# #     # “Put value at the end of list a.”
+# #     # “Take the current number stored in i and put it into list a.”
+# # print(a)        
 
 
-# or Use the extend() method to add list2 to the end of list1
-# a = [232,3,5]
-# b = [0,0,0]
-# a.extend(b)
-# print(a)
+# # or Use the extend() method to add list2 to the end of list1
+# # a = [232,3,5]
+# # b = [0,0,0]
+# # a.extend(b)
+# # print(a)
 
  
  
-# MODULE 6
-# Tuples
-# They are used to store multple ites in a single variable.
-# A tupel is a collection which is ordered and unchangeable.
-# Tuples are written with round breackets().
-# x = ("apple","banna","Cherry")
-# print(x)
+# # MODULE 6
+# # Tuples
+# # They are used to store multple ites in a single variable.
+# # A tupel is a collection which is ordered and unchangeable.
+# # Tuples are written with round breackets().
+# # x = ("apple","banna","Cherry")
+# # print(x)
 
-# Tuple Items
-# Tuple items are ordered Unchangeable,and allow duplicate values
-
-
-# Ordered means )==> that the items have a defined order,and that order will not change.
-
-# Unchageable means  )==> that we cannot change, add or remove items after the tuple created 
-
-# Allow duplicates
-# x = ('a',"b",'a')
-# print(x)
-
-# Rule for tople 
-# to type one object insie the tuple u need to put
-# comma(,)after that otherwise Python will not recognize it as a tuple.
-# t = ('apple',)
-# print(t)
-
-# Tuple length
-# tuple = (1,2,3,4,5)
-# print(len(tuple))
+# # Tuple Items
+# # Tuple items are ordered Unchangeable,and allow duplicate values
 
 
-# Tuple constructor 
-# x=("apple", "banana", "cherry")
-# thistuple = tuple(x)
-# print(thistuple)
+# # Ordered means )==> that the items have a defined order,and that order will not change.
+
+# # Unchageable means  )==> that we cannot change, add or remove items after the tuple created 
+
+# # Allow duplicates
+# # x = ('a',"b",'a')
+# # print(x)
+
+# # Rule for tople 
+# # to type one object insie the tuple u need to put
+# # comma(,)after that otherwise Python will not recognize it as a tuple.
+# # t = ('apple',)
+# # print(t)
+
+# # Tuple length
+# # tuple = (1,2,3,4,5)
+# # print(len(tuple))
 
 
-# Access Tuple Items
-# you can access tuple items by referring to the index number, -
-# inside sqeare brackets.
-# this = ('apple','banana','Cherry')
-# print(this[2])
+# # Tuple constructor 
+# # x=("apple", "banana", "cherry")
+# # thistuple = tuple(x)
+# # print(thistuple)
 
 
-# negative indexing 0===> means start from the end (starts from -1)
-# t = (1,2,3,4)
-# print(t[-1])
-
-# Range of Indexs
-# You can choose where to start and were to end the range
-# When specifing a range, the return value will ba a new tuple with the specified items.
-# t = (1,23,4,5,5,6,6)
-# print(t[0:3])
-
-# Check if item exists 
-# a = ("ap",'sd','ad')
-# if "ap" in a:
-#     print(True)
-
-# Update tuples
-# Tuples are unchangable, meaning that you cannot change ,
-# add, or remove items once the tuple is created.
-
-# Converting tuple to list and after changing values ,converting back to tuple()
-# x =("apple","banna","cherry")
-# y = list(x)
-# //////add element 
-# y.append("Cucumber")
-# change element by using it's index
-# y[1]= "kiwi"
-# x = tuple(y)
-# print(x) 
-
-# a = (1,2,3,4)
-# c = list(a)
-# c.append(5)
-# a= tuple(c)
-# print(a)
-
-# ////////remove items in the list 
-# a = ('apple','banana')
-# n = list(a)
-# n.remove("apple")
-# a = tuple(n)
-# print(a)
-
-# When we create a tuple we normally arrign values to it.
-# this is called "Packing" a tuple.
-# f = ("apple",'banan','cherry')
-# print(f)
-
-# We are allowed to extract the values back into variables. And this is called "unpacking"
-# f = ("apple",'banan','cherry')
-# (a,b,c) = f
-# print(a)
-# print(b)
-# print(c)
+# # Access Tuple Items
+# # you can access tuple items by referring to the index number, -
+# # inside sqeare brackets.
+# # this = ('apple','banana','Cherry')
+# # print(this[2])
 
 
+# # negative indexing 0===> means start from the end (starts from -1)
+# # t = (1,2,3,4)
+# # print(t[-1])
 
-# Using Asterisk * 
-# If the number of variables is less than the number of values,-
-# you can add an * to the variable name and the values will be assigned -
-# to the variable as a list.
+# # Range of Indexs
+# # You can choose where to start and were to end the range
+# # When specifing a range, the return value will ba a new tuple with the specified items.
+# # t = (1,23,4,5,5,6,6)
+# # print(t[0:3])
 
-# f = ("apple",'banan','cherry','a','d','f','af')
-# (a,b,c,*d) = f
-# print(a)
-# print(b)
-# print(c)
+# # Check if item exists 
+# # a = ("ap",'sd','ad')
+# # if "ap" in a:
+# #     print(True)
+
+# # Update tuples
+# # Tuples are unchangable, meaning that you cannot change ,
+# # add, or remove items once the tuple is created.
+
+# # Converting tuple to list and after changing values ,converting back to tuple()
+# # x =("apple","banna","cherry")
+# # y = list(x)
+# # //////add element 
+# # y.append("Cucumber")
+# # change element by using it's index
+# # y[1]= "kiwi"
+# # x = tuple(y)
+# # print(x) 
+
+# # a = (1,2,3,4)
+# # c = list(a)
+# # c.append(5)
+# # a= tuple(c)
+# # print(a)
+
+# # ////////remove items in the list 
+# # a = ('apple','banana')
+# # n = list(a)
+# # n.remove("apple")
+# # a = tuple(n)
+# # print(a)
+
+# # When we create a tuple we normally arrign values to it.
+# # this is called "Packing" a tuple.
+# # f = ("apple",'banan','cherry')
+# # print(f)
+
+# # We are allowed to extract the values back into variables. And this is called "unpacking"
+# # f = ("apple",'banan','cherry')
+# # (a,b,c) = f
+# # print(a)
+# # print(b)
+# # print(c)
 
 
 
-# classes and objects
-# Modify properties on objects
-# class person:
-#     def __init__(self,name,age):
+# # Using Asterisk * 
+# # If the number of variables is less than the number of values,-
+# # you can add an * to the variable name and the values will be assigned -
+# # to the variable as a list.
+
+# # f = ("apple",'banan','cherry','a','d','f','af')
+# # (a,b,c,*d) = f
+# # print(a)
+# # print(b)
+# # print(c)
+
+
+
+# # classes and objects
+# # Modify properties on objects
+# # class person:
+# #     def __init__(self,name,age):
+# #         self.name = name
+# #         self.age = age
+# #     def my_function(self):
+# #          print("Hello my name is " + self.name)
+# # p1 = person('Husan',221) 
+# # p1.age= 40
+# # print(p1.name)   
+# # print(p1.age)   
+
+# # My example
+
+# # class Car:
+# #     def __init__ (CarNAME,Name,year,price):
+# #         CarNAME.name= Name
+# #         CarNAME.year = year
+# #         CarNAME.price = price
+# #     def BMW(CarNAME):
+# #         car = Car("BMW",1999,1000.00)
+# #         print(CarNAME.name)    
+# #         print(car.name)
+
+
+# # class Car:
+# #     def __init__(self, name, year, price):
+# #         self.name = name
+# #         self.year = year
+# #         self.price = price
+
+# #     def show(self):
+# #         print("Cars name :" + self.name)
+# #         print("Year :" + str(self.year))
+# #         print("Price : "+ str(self.price))
+
+
+# # # Create object
+# # car1 = Car("BMW", 1999, 1000.00)
+# # car2 = Car("Mersides",2000,1299.00)
+
+# # # Call method
+# # car1.show()
+# # car2.show()
+
+
+# # Delete Object Properties 
+# # by using the del keyword
+
+# # //////////////////////////////////////////////
+# # Class Definition
+# # A blueprint/template for creating objects
+# class Student:
+
+#     # Constructor (Special method / Dunder method)
+#     # Automatically runs when a new object is created
+#     # Used to initialize instance attributes
+#     def __init__(self, name, grade):
+
+#         # Instance attributes (Object attributes / Member variables)
+#         # These store data inside the object
 #         self.name = name
-#         self.age = age
-#     def my_function(self):
-#          print("Hello my name is " + self.name)
-# p1 = person('Husan',221) 
-# p1.age= 40
-# print(p1.name)   
-# print(p1.age)   
+#         self.grade = grade
 
-# My example
-
-# class Car:
-#     def __init__ (CarNAME,Name,year,price):
-#         CarNAME.name= Name
-#         CarNAME.year = year
-#         CarNAME.price = price
-#     def BMW(CarNAME):
-#         car = Car("BMW",1999,1000.00)
-#         print(CarNAME.name)    
-#         print(car.name)
-
-
-# class Car:
-#     def __init__(self, name, year, price):
-#         self.name = name
-#         self.year = year
-#         self.price = price
-
+#     # Instance Method
+#     # A function that belongs to the class and works on an object
 #     def show(self):
-#         print("Cars name :" + self.name)
-#         print("Year :" + str(self.year))
-#         print("Price : "+ str(self.price))
+
+#         # Accessing an instance attribute
+#         # Reading data stored inside the object
+#         print(self.name)
 
 
-# # Create object
-# car1 = Car("BMW", 1999, 1000.00)
-# car2 = Car("Mersides",2000,1299.00)
+# # Object Instantiation
+# # Creating an instance of the class
+# # s1 is an object reference
+# s1 = Student('Ali', 19)
 
-# # Call method
-# car1.show()
-# car2.show()
-
-
-# Delete Object Properties 
-# by using the del keyword
-
-# //////////////////////////////////////////////
-# Class Definition
-# A blueprint/template for creating objects
-class Student:
-
-    # Constructor (Special method / Dunder method)
-    # Automatically runs when a new object is created
-    # Used to initialize instance attributes
-    def __init__(self, name, grade):
-
-        # Instance attributes (Object attributes / Member variables)
-        # These store data inside the object
-        self.name = name
-        self.grade = grade
-
-    # Instance Method
-    # A function that belongs to the class and works on an object
-    def show(self):
-
-        # Accessing an instance attribute
-        # Reading data stored inside the object
-        print(self.name)
+# # Method Call (Method Invocation)
+# # Calling an instance method on the object
+# s1.show()
 
 
-# Object Instantiation
-# Creating an instance of the class
-# s1 is an object reference
-s1 = Student('Ali', 19)
 
-# Method Call (Method Invocation)
-# Calling an instance method on the object
-s1.show()
