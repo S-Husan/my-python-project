@@ -24,7 +24,7 @@ def show_average():
     result = (num1 + num2 + num3 + num4) / 4
     
     avg_result_label.config(text=str(result))
-    # total_result_label.config(text="")
+    total_result_label.config(text="")
 
 
 window = tk.Tk()
@@ -83,4 +83,22 @@ avg_result_label.pack()
 
 
 
-window.mainloop()   
+# window.mainloop()   
+# count = 0
+# def click():
+#     global count
+#     count+=1
+#     countL.config(text=count)
+
+# # LEssons
+
+# window = tk.Tk()
+# button = tk.Button(window,text= "Click",command = click)
+# button.pack(pady= 80)
+# button.pack(padx= 0)
+# window.geometry("700x400")
+
+# a = tk.Label(window,text=click)
+# countL = tk.Label(window, text=count)
+# countL.pack()
+# window.mainloop()
