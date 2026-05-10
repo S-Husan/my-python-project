@@ -33,14 +33,33 @@
 
 
 
+# try:
+#     number = int(input("Enter a number to divide 10 by: "))
+#     result = 10 / number
+# except ZeroDivisionError:
+#     print("Error: You cannot divide by zero!")
+# except ValueError:
+#     print("Error: That wasn't a valid number!")
+# else:
+#     print(f"Success! The result is {result}")
+# finally:
+#     print("Execution complete.")
+    
 try:
-    number = int(input("Enter a number to divide 10 by: "))
-    result = 10 / number
+    number= int(input("Enter a number: "))
+    print("==============")
+    result= 10/ number
+    print("==============")
+    print(f"Result is {result}")
+    print("==============")
 except ZeroDivisionError:
-    print("Error: You cannot divide by zero!")
+    print("You can't devide by 0")
+    print("==============")
 except ValueError:
-    print("Error: That wasn't a valid number!")
+    print("That is not a valid number")
+    print("==============")
 else:
-    print(f"Success! The result is {result}")
+    print("No erros identified")
+    print("==============")
 finally:
-    print("Execution complete.")
+    print("The task is done, no metter succed or not")
