@@ -181,33 +181,48 @@
 # finally:
 #     print('The excectuion is done')
 
-try:
-    user_name = input("Enter your name: ")
+# try:
+#     user_name = input("Enter your name: ")
     
-    if user_name.lower() != "husan":
-        # We manually raise an error if the name is wrong
-        raise ValueError("Unauthorized User")
+#     if user_name.lower() != "husan":
+#         # We manually raise an error if the name is wrong
+#         raise ValueError("Unauthorized User")
         
-except ValueError:
-    print("You are not an Admin")
+# except ValueError:
+#     print("You are not an Admin")
 
-else:
-    # This runs ONLY if no ValueError was raised
-    print("You are allowed to enter,", user_name)
+# else:
+#     # This runs ONLY if no ValueError was raised
+#     print("You are allowed to enter,", user_name)
 
-finally:
-    print("The authentication has completed")
+# finally:
+#     print("The authentication has completed")
     
-try:
-    EnterAge= int(input("Enter your age: "))
-    if 18 > EnterAge:
-        print("You are not allowed to watch this Web")
-        raise ValueError("Unauthorized User")
-except ValueError:
-    print('You are still child')
-else:
-    print("Your age is valid u can visit  webosite")
-finally :
+# try:
+#     EnterAge= int(input("Enter your age: "))
+#     if 18 > EnterAge:
+#         print("You are not allowed to watch this Web")
+#         raise ValueError("Unauthorized User")
+# except ValueError:
+#     print('You are still child')
+# else:
+#     print("Your age is valid u can visit  webosite")
+# finally :
 
-    print("The authorization has complited withoun and error")
+#     print("The authorization has complited withoun and error")
     
+
+# ]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]
+#                                String formating 
+# ]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]
+
+# q = 2
+# itemnumber =123 
+# price =10
+# myorder = "I want {} pease of item number {}, for {:.2f} dollars "
+# print(myorder.format(q,itemnumber,price))
+# BASIC FILE OPERATIONS
+
+
+
+# DATA 
