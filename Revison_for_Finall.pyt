@@ -135,16 +135,79 @@
 
 
 # f.close() happens here automatically!
-with open('test.txt', 'r') as file:
-    print(f"File name: {file.name}")
-    print(f"File mode: {file.mode}")
-    print(f"Is the file closed? {file.closed}")
-    print(f"File encoding: {file.encoding}")
+# with open('test.txt', 'r') as file:
+#     print(f"File name: {file.name}")
+#     print(f"File mode: {file.mode}")
+#     print(f"Is the file closed? {file.closed}")
+#     print(f"File encoding: {file.encoding}")
     
 # file.close()
 
-with open("test.txt","r") as f:
-    print(f'File name: {file.encoding  }')
+# with open("test.txt","r") as f:
+#     print(f'File name: {file.encoding  }')
     
     
 # Reading a file
+
+
+# ]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]
+#                                SLIDES FORM 90-151 Last preperation 
+# ]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]
+
+# PIP prefereed install package 
+
+# Numpy numerical python 
+
+# with open('test.txt', 'r') as file:
+#     print(f"File name: {file.name}")
+#     print(f"File mode: {file.mode}")
+#     print(f"Is the file closed? {file.closed}")
+#     print(f"File encoding: {file.encoding}")
+    
+# file.close()
+
+
+# 
+
+# try:
+#     # risky code
+#     pass
+# except SomeError:
+#     # runs if error happens
+#     pass
+# else:
+#     # runs if NO error happens
+#     pass
+# finally:
+#     print('The excectuion is done')
+
+try:
+    user_name = input("Enter your name: ")
+    
+    if user_name.lower() != "husan":
+        # We manually raise an error if the name is wrong
+        raise ValueError("Unauthorized User")
+        
+except ValueError:
+    print("You are not an Admin")
+
+else:
+    # This runs ONLY if no ValueError was raised
+    print("You are allowed to enter,", user_name)
+
+finally:
+    print("The authentication has completed")
+    
+try:
+    EnterAge= int(input("Enter your age: "))
+    if 18 > EnterAge:
+        print("You are not allowed to watch this Web")
+        raise ValueError("Unauthorized User")
+except ValueError:
+    print('You are still child')
+else:
+    print("Your age is valid u can visit  webosite")
+finally :
+
+    print("The authorization has complited withoun and error")
+    
