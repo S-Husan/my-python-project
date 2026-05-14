@@ -226,3 +226,36 @@
 
 
 # DATA 
+
+# file = open("test.txt","rt")
+# print(file.read())
+# file.close()
+
+
+# with open("test.txt","rt") as file:
+#     print(file.read())
+#     print(file.name)
+#     print(file.mode)
+#     print(file.encoding)
+#     print(file.closed)
+    
+
+# Nikname = input("Enter your Nikname: ")
+# passwrod = int(input("Enter the paswword: "))
+# major = input("Enter your Education department: ")
+# age= int(input("Enter your age: "))
+
+# with open("text.txt","wt") as file:
+#     file.write(f"User name is : {Nikname}")
+#     file.write(f"Password is : { passwrod}")
+#     file.write(f"The education department is  :{ major}")
+#     file.write(f"Your age is: { age}")
+    
+# with open ("text.txt", 'rt') as file:
+    # print(file.read())
+    
+# file = open("TEst1.txt", "w")
+# import os 
+
+# os.remove("text.txt")
+
